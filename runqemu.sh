@@ -3,7 +3,8 @@
 #Host forwarding: Host Port 10022 ->> QEMU Port 22 
 #Author: Siddhant Jajoo.
 
-
+#-netdev user,id=eth0,hostfwd=tcp::10022-:22 \
+#-device virtio-net-device,netdev=eth0 \
 qemu-system-aarch64 \
     -M virt  \
     -cpu cortex-a53 -nographic -smp 1 \
