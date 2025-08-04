@@ -17,6 +17,6 @@ qemu-system-aarch64 \
     -drive file=buildroot/output/images/rootfs.ext4,if=none,format=raw,id=hd0 \
     -device virtio-net-pci,netdev=eth0 \
     -device virtio-blk-device,drive=hd0 \
-    -netdev user,id=eth0,hostfwd=tcp::10022-:22 
+    -netdev user,id=eth0,hostfwd=tcp::10022-:22,hostfwd=tcp::9000-:9000
     
     
