@@ -9,6 +9,8 @@
 #-device virtio-rng-pci
 #$-append "rootwait root=/dev/vda console=ttyAMA0" \
 #-netdev user,id=eth0,dhcpstart=10.0.2.30,hostfwd=tcp::10022-:22 \
+echo "hostfwd=tcp::10022-:22"
+echo "hostfwd=tcp::9000-:9000"
 qemu-system-aarch64 \
     -M virt  \
     -cpu cortex-a53 -nographic -smp 1 \
