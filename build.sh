@@ -6,14 +6,21 @@ source shared.sh
 
 set -e 
 cd `dirname $0`
+echo `dirname $0`
 #cd `realpath $0`
 
 #echo `dirname $0`
 EXTERNAL_REL_BUILDROOT=../base_external 
+
+#add line to clear the git index
+git update-index --refresh
+#add line to clear git cache
+git rm -r --cached -f .
+
 git submodule init
 git submodule sync
-git submodule update
-
+#git submodule update
+git submodule update --remote --merge --init 
 
 if [ ! -e buildroot/.config ]
 then

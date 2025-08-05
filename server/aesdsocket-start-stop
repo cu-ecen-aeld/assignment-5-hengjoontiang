@@ -1,11 +1,12 @@
 # etc/init.d/S99 script [start|stop|restart]
+#!/bin/sh
 DAEMON_PATH=/usr/bin
 START_STOP_DAEMON_PATH=/usr/sbin
 #check passed in option
-#!/bin/sh
+
 
 DAEMON=${DAEMON_PATH}/aesdsocket
-DAEMON_ARGS=" -d"
+DAEMON_ARGS="-d"
 
 case "$1" in 
 	start)
