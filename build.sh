@@ -9,13 +9,14 @@ cd `dirname $0`
 echo `dirname $0`
 #cd `realpath $0`
 
+git submodule deinit --all
 #echo `dirname $0`
 EXTERNAL_REL_BUILDROOT=../base_external 
-
+#git submodule deinit --all
 #add line to clear the git index
-git update-index --refresh
+#git update-index --refresh
 #add line to clear git cache
-git rm -r --cached -f .
+#git rm -r --cached -f .
 
 git submodule init
 git submodule sync
