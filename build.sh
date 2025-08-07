@@ -17,7 +17,7 @@ EXTERNAL_REL_BUILDROOT=../base_external
 #git update-index --refresh
 #add line to clear git cache
 #git rm -r --cached -f .
-ssh-agent -s
+#ssh-agent -s
 
 git submodule init
 git submodule sync
