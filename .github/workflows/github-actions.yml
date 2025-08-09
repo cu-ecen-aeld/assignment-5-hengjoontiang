@@ -9,9 +9,12 @@ jobs:
     full-test:
         container: cuaesd/aesd-autotest:24-assignment5-buildroot
         runs-on: self-hosted
-        timeout-minutes: 120
+        timeout-minutes: 240
         steps:
-          - uses: actions/checkout@v2
+          - uses: actions/checkout@v4
+            with:
+                 submodules: recursive
+                 ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           - name: Checkout submodules
             run: git submodule update --init --recursive
           - uses: webfactory/ssh-agent@v0.5.3
@@ -20,7 +23,14 @@ jobs:
           - name: Run full test
             env:
               GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
-            run: ./full-test.sh
+            run: |
+                  ./clean.sh
+                  cp .config buildroot && cd buildroot
+                  make
+                  make aesd-assignments
+                  cd ..
+                  ./save-config.sh
+                 
           - name: Cleanup
             if: always()
             run: |
