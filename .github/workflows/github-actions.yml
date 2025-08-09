@@ -25,8 +25,9 @@ jobs:
               GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
               FORCE_UNSAFE_CONFIGURE: 1
             run: |
-                  cd buildroot
-                  make all
+                  ./clean.sh
+                  cp .config buildroot
+                  cd buildroot && make all
                   cd ..
                   ./save-config.sh
                  
