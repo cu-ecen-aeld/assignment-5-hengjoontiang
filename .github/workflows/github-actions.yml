@@ -26,6 +26,9 @@ jobs:
               FORCE_UNSAFE_CONFIGURE: 1
             run: |
                   ./save-config.sh
+                  cd buildroot
+                  make aesd-assignments
+                  cd ..
                   ./full-test.sh
                  
           - name: Cleanup
