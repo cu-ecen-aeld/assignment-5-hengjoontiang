@@ -27,6 +27,7 @@ jobs:
             run: |
                   cp .config buildroot
                   cd buildroot
+                  make BR2_EXTERNAL=../base_external menuconfig
                   make aesd-assignments
                   cd ..
                   ./save-config.sh
