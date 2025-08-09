@@ -25,10 +25,12 @@ jobs:
               GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
               FORCE_UNSAFE_CONFIGURE: 1
             run: |
+                  ./build.sh  
                   ./save-config.sh
                   cd buildroot
                   make aesd-assignments
                   cd ..
+                  ./build.sh
                   ./full-test.sh
                  
           - name: Cleanup
