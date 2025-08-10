@@ -22,10 +22,10 @@ EXTERNAL_REL_BUILDROOT=../base_external
 #eval `ssh-agent`
 #ssh-add
 
-#git submodule init
-#git submodule sync
+git submodule init
+git submodule sync
 #git submodule update
-#git submodule update --remote --merge --init 
+git submodule update --remote --merge --init 
 
 if [ ! -e buildroot/.config ]
 then
