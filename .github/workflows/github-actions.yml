@@ -16,7 +16,7 @@ jobs:
                  submodules: recursive
                  ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           - name: Checkout submodules
-            run: git submodule update --init --recursive
+            run: git submodule update --init --recursive --remote
           - uses: webfactory/ssh-agent@v0.5.3
             with:
                 ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
