@@ -20,7 +20,7 @@ EXTERNAL_REL_BUILDROOT=../base_external
 #ssh-agent -s
 
 eval `ssh-agent`
-ssh-add
+#ssh-add
 
 #git submodule init
 #git submodule sync
