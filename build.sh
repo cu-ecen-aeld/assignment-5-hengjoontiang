@@ -11,7 +11,7 @@ cd `dirname $0`
 
 #git submodule deinit --all
 #echo `dirname $0`
-EXTERNAL_REL_BUILDROOT=../base_external 
+EXTERNAL_REL_BUILDROOT=./base_external 
 #git submodule deinit --all
 #add line to clear the git index
 #git update-index --refresh
