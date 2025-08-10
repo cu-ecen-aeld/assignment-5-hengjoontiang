@@ -1,6 +1,6 @@
 #!/bin/sh
 # Shared definitions for buildroot scripts
-HOme=$(pwd)
+HOME=$(pwd)
 # The defconfig from the buildroot directory we use for qemu builds
 QEMU_DEFCONFIG=configs/qemu_aarch64_virt_defconfig
 # The place we store customizations to the qemu configuration
