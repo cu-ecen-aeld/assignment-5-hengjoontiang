@@ -19,8 +19,8 @@ EXTERNAL_REL_BUILDROOT=./base_external
 #git rm -r --cached -f .
 #ssh-agent -s
 
-eval `ssh-agent`
-ssh-add
+#eval `ssh-agent`
+#ssh-add
 
 git submodule init
 git submodule sync
