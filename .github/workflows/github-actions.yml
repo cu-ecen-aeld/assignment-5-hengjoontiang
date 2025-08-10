@@ -28,7 +28,7 @@ jobs:
                   cd buildroot
                   make aesd-assignments
                   cd ..
-                  ./save-config.sh
+                  ./shared.sh
                  
           - name: Cleanup
             if: always()
