@@ -1,0 +1,173 @@
+#i. Perform operations on startup to load the scull driver and on shutdown to unload.  See scull_load
+# and scull_unload
+# scripts for reference and customize these as necessary.
+#
+#                ii. Perform operations on startup to load the faulty driver and on shutdown to unload.  See module_load
+# and module_unload
+# scripts for reference and customize these as necessary.
+#
+#                iii. Run modprobe on the hello module to load on startup and use rmmod to remove on shutdown.
+
+
+
+
+#Enable the Overlay in Buildroot
+#Configure Buildroot to include your overlay:
+#Run make menuconfig
+#Navigate to System configuration
+#Locat#e Root filesystem overlay directories
+#Enter the #path to your overlay directory: board/<company>/<boardname>/rootfs-overlay
+#Save your configuration and rebuild your image with make.
+#!/bin/sh
+echo "S98lddmodules started"
+
+#remember to chmod +x 
+#chmod +x S98lddmodules
+
+case "$1" in
+    start)
+        echo "Loading scull driver..."
+        # Load the module
+        if insmod /lib/modules/$(uname -r)/extra/scull.ko; then
+            # Create device nodes (major number may vary, check 'cat /proc/devices')
+            MAJOR=$(awk "\$2==\"scull\" {print \$1}" /proc/devices)
+            mknod /dev/scull0 c $MAJOR 0
+            mknod /dev/scull1 c $MAJOR 1
+            mknod /dev/scull2 c $MAJOR 2
+            mknod /dev/scull3 c $MAJOR 3
+            echo "OK"
+        else
+            echo "FAIL"
+        fi
+        ;;
+    stop)
+        echo "Unloading scull driver..."
+        rmmod scull
+        rm -f /dev/scull[0-3]
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;  
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+        ;;
+esac
+
+
+case "$1" in
+  start)
+    printf "Loading misc-modules... "
+    mkdir /lib/modules/$(uname -r)/misc/
+    cp /lib/modules/$(uname -r)/extra/*.ko /lib/modules/$(uname -r)/misc/
+    #sudo depmod -a
+    modprobe hello  #misc-modules
+    #if insmod /lib/modules/$(uname -r)/extra/hello.ko; then
+    	if [ $? -eq 0 ]; then
+      		echo "OK"
+    	else
+      		echo "FAIL"
+    	fi
+    	
+    #fi
+    ;;
+  stop)
+    
+    # Unload the module
+        #if rmmod misc-modules; then
+        if rmmod hello; then
+            echo "DONE"
+        else
+            echo "FAIL"
+            exit 1
+            
+        fi
+        ;;
+  restart)
+        $0 stop
+        $0 start
+        ;;  
+  *)
+    echo "Usage: $0 {start|stop}"
+    exit 1
+    ;;	    
+esac
+
+case "$1" in
+    start)
+        echo "Loading faulty driver..."
+        # Load the module
+        #modprobe faulty  #misc-modules
+        #after loading, do task instructed
+        echo "insmod /lib/modules/$(uname -r)/extra/faulty.ko"
+        if insmod /lib/modules/$(uname -r)/extra/faulty.ko; then
+           echo "insmod faulty.ko successful"
+           #DEVICE="/dev/faulty"
+	   MAJOR=$(awk "\$2==\"faulty\" {print \$1}" /proc/devices)
+	   echo "fault MAJOR=" ${MAJOR}
+	   #if [ -e "${DEVICE}" ]; then
+           #   # Extract major and minor numbers using stat
+           #   MAJOR=$(stat -c %t "${DEVICE}")
+           #   MINOR=$(stat -c %T "${DEVICE}")
+    
+              # Convert hex output from stat to decimal
+           #   MAJOR_DEC=$((16#${MAJOR}))
+           #   MINOR_DEC=$((16#${MINOR}))
+    
+    	   #   echo "Device: $DEVICE"
+    	   #   echo "Major Number: $MAJOR_DEC"
+    	   #   echo "Minor Number: $MINOR_DEC"
+	   #else #if [ -e "${DEVICE}" ]; then
+    	   #   echo "Error: Device node $DEVICE does not exist. Driver may be faulty or unloaded."
+	   #fi #if [ -e "${DEVICE}" ]; then
+            
+            #mknod -m 660 /dev/faulty b ${MAJOR} ${MINOR}
+            #mknod -m 660 /dev/faulty b ${MAJOR} 
+            mknod -m 660 /dev/faulty c ${MAJOR} 0
+            #bash script obtain major and 
+            echo "OK"
+        else
+            echo "FAIL"
+        fi
+        ;;
+    stop)
+        echo "Unloading faulty driver..."
+        rmmod faulty
+        rm -f /dev/faulty
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;  
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+        ;;
+esac
+#case "$1" in
+#  start)
+#    printf "Loading hello module... "
+#    modprobe hello
+#    if [ $? -eq 0 ]; then
+#      echo "OK"
+#    else
+#      echo "FAIL"
+#    fi
+#    
+#  stop)
+#    
+#    # Unload the module
+#        if rmmod hello; then
+#            echo "DONE"
+#        else
+#            echo "FAIL"
+#            exit 1
+#        fi
+#  *)
+#    echo "Usage: $0 {start|stop}"
+#    exit 1
+#    
+#esac
+exit 0
+

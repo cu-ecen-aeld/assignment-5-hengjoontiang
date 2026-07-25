@@ -1,0 +1,6 @@
+config BR2_PACKAGE_LDD
+	bool "ldd"
+	#need to enable Linux Kernel is checked under Kernel  in make menuconfig
+	depends on BR2_LINUX_KERNEL
+	help
+	  The ldd package that contains scull and misc-modules

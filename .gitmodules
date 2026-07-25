@@ -8,3 +8,6 @@
 	path = assignments-3-and-later-hengjoontiang
 	url = git@github.com:cu-ecen-aeld/assignments-3-and-later-hengjoontiang.git
 	branch = main
+[submodule "assignment-7-hengjoontiang"]
+	path = assignment-7-hengjoontiang
+	url = git@github.com:cu-ecen-aeld/assignment-7-hengjoontiang.git
