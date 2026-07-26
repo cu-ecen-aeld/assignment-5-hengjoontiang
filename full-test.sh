@@ -22,7 +22,7 @@ set +e
 
 eval `ssh-agent`
 ssh-add
-
+ssh-keyscan -p 10022 -H localhost >> ~/.ssh/known_hosts
 
 # If there's a configuration for the assignment number, use this to look for
 # additional tests

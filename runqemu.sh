@@ -22,11 +22,11 @@ qemu-system-aarch64 \
     -netdev user,id=eth0,hostfwd=tcp::10022-:22,hostfwd=tcp::9000-:9000
     
     # Wait for SSH to become active on port 2222
-echo "Waiting for QEMU guest SSH..."
-until nc -z localhost 10022; do
-  sleep 1
-done
+#echo "Waiting for QEMU guest SSH..."
+#until nc -z localhost 10022; do
+#  sleep 1
+#done
 
 # Automatically fetch and add the guest SSH key to known_hosts
-ssh-keyscan -p 10022 -H localhost >> ~/.ssh/known_hosts
-echo "SSH key captured successfully. Ready to connect!"
+#ssh-keyscan -p 10022 -H localhost >> ~/.ssh/known_hosts
+#echo "SSH key captured successfully. Ready to connect!"
