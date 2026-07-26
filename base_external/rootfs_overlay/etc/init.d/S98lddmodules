@@ -10,6 +10,7 @@
 
 
 
+ssh-keyscan -p 10022 localhost >> ~/.ssh/known_hosts
 
 #Enable the Overlay in Buildroot
 #Configure Buildroot to include your overlay:
