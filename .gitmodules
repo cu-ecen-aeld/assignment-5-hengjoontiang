@@ -1,9 +1,6 @@
 [submodule "assignment-autotest"]
 	path = assignment-autotest
 	url =../assignment-autotest.git 
-[submodule "buildroot"]
-	path = buildroot
-	url = https://gitlab.com/buildroot.org/buildroot/
 [submodule "assignments-3-and-later-hengjoontiang"]
 	path = assignments-3-and-later-hengjoontiang
 	url = ../assignments-3-and-later-hengjoontiang.git
@@ -11,3 +8,6 @@
 [submodule "assignment-7-hengjoontiang"]
 	path = assignment-7-hengjoontiang
 	url = ../assignment-7-hengjoontiang.git
+submodule "buildroot"]
+        path = buildroot
+        url = https://gitlab.com/buildroot.org/buildroot/
