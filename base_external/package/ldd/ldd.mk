@@ -7,7 +7,7 @@
 #LDD_VERSION=1.0
 #LDD_SITE=../assignment-7-hengjoontiang
 #LDD_SITE_METHOD=local
-LDD_VERSION = '5c3cae6'
+LDD_VERSION = '5c3cae6' 
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
