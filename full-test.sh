@@ -21,8 +21,14 @@ echo "Running test with user $(whoami)"
 set +e
 
 eval `ssh-agent`
-ssh-add
+# ssh-add
+
+echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
 ssh-keyscan -p 10022 -H localhost >> ~/.ssh/known_hosts
+ssh-keyscan github.com >> ~/.ssh/known_hosts
+ssh-keygen -f "/root/.ssh/known_hosts" -R "github.com"
 
 # If there's a configuration for the assignment number, use this to look for
 # additional tests
