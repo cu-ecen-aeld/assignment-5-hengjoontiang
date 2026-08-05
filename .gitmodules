@@ -1,6 +1,6 @@
 [submodule "assignment-autotest"]
 	path = assignment-autotest
-	url =git@github.com:cu-ecen-aeld/assignment-autotest.git 
+	url =https://github.com/cu-ecen-5013/assignment-autotest  
 [submodule "assignments-3-and-later-hengjoontiang"]
 	path = assignments-3-and-later-hengjoontiang
 	url = git@github.com:cu-ecen-aeld/assignments-3-and-later-hengjoontiang.git
