@@ -1,0 +1,306 @@
+buildroot/package/wget/wget.mk:3:# wget
+buildroot/package/wget/wget.mk:8:WGET_SOURCE = wget-$(WGET_VERSION).tar.lz
+buildroot/package/wget/wget.mk:9:WGET_SITE = $(BR2_GNU_MIRROR)/wget
+buildroot/package/wget/Config.in:2:	bool "wget"
+buildroot/package/wget/Config.in:12:	  http://www.gnu.org/software/wget/
+buildroot/package/wget/Config.in:14:comment "wget needs a toolchain w/ wchar"
+buildroot/package/wget/wget.hash:1:# From https://lists.gnu.org/archive/html/bug-wget/2024-11/msg00002.html
+buildroot/package/wget/wget.hash:2:sha1  ca79e61fbf1d32133f60ef7c7d476b250b6da423  wget-1.25.0.tar.lz
+buildroot/package/wget/wget.hash:4:# https://ftp.gnu.org/gnu/wget/wget-1.25.0.tar.lz.sig
+buildroot/package/wget/wget.hash:6:sha256  19225cc756b0a088fc81148dc6a40a0c8f329af7fd8483f1c7b2fe50f4e08a1f  wget-1.25.0.tar.lz
+buildroot/package/Config.in:2727:	source "package/wget/Config.in"
+buildroot/package/suricata/suricata.mk:44:#               download through wget/curl)
+buildroot/package/wireless_tools/Config.in:18:	  iwgetid tools.
+buildroot/package/softether/0001-Create-autotools-plumbing-for-SoftEther.patch:944:+#   wattr_set() and wget_wch() and the macros WA_NORMAL and _XOPEN_CURSES
+buildroot/package/softether/0001-Create-autotools-plumbing-for-SoftEther.patch:1072:+                        wget_wch(stdscr, &f);
+buildroot/package/softether/0001-Create-autotools-plumbing-for-SoftEther.patch:1103:+                        wget_wch(stdscr, &f);
+buildroot/package/softether/0001-Create-autotools-plumbing-for-SoftEther.patch:1134:+                        wget_wch(stdscr, &f);
+buildroot/package/softether/0001-Create-autotools-plumbing-for-SoftEther.patch:1285:+                            wget_wch(stdscr, &f);
+buildroot/package/busybox/busybox.mk:74:	$(if $(BR2_PACKAGE_WGET),wget) \
+buildroot/package/ipmitool/0004-configure.ac-allow-disabling-registry-downloads.patch:26:-AC_CHECK_PROG([WGET], [wget], [wget])
+buildroot/package/ipmitool/0004-configure.ac-allow-disabling-registry-downloads.patch:47:+	AC_CHECK_PROG([WGET], [wget], [wget])
+buildroot/package/ipmitool/0004-configure.ac-allow-disabling-registry-downloads.patch:51: 		AC_MSG_WARN([** Neither wget nor curl could be found.])
+buildroot/package/mfgtools/readme.txt:30:$ wget https://storage.googleapis.com/boundarydevices.com/ucl2.xml \
+buildroot/package/go/go-src/0002-cmd-dist-set-buildvcs-false-when-building-go-bootstr.patch:16:  wget https://go.dev/dl/go1.19.11.src.tar.gz
+buildroot/package/go/go-src/0002-cmd-dist-set-buildvcs-false-when-building-go-bootstr.patch:22:  wget https://go.dev/dl/go1.20.6.src.tar.gz
+buildroot/package/go/go-bootstrap-stage3/0001-cmd-dist-set-buildvcs-false-when-building-go-bootstr.patch:16:  wget https://go.dev/dl/go1.19.11.src.tar.gz
+buildroot/package/go/go-bootstrap-stage3/0001-cmd-dist-set-buildvcs-false-when-building-go-bootstr.patch:22:  wget https://go.dev/dl/go1.20.6.src.tar.gz
+buildroot/package/pciutils/pciutils.mk:49:	$(SED) 's/wget --no-timestamping/wget/' $(PCIUTILS_DIR)/update-pciids.sh
+buildroot/.config:331:BR2_WGET="wget -nd -t 3 --connect-timeout=10"
+buildroot/output/build/host-autoconf-2.72/ChangeLog:4070:	Using HTTP::Tiny to talk to the network, instead of wget, means that
+buildroot/output/build/host-autoconf-2.72/build-aux/announce-gen:661:  wget -q -O- '$gpg_keyring_url' | gpg --import -
+buildroot/output/build/host-autoconf-2.72/build-aux/announce-gen:669:  wget -q https://ftp.gnu.org/gnu/gnu-keyring.gpg
+buildroot/output/build/host-autoconf-2.72/build-aux/gendocs.sh:116:  wget \"$scripturl\"
+buildroot/output/build/host-autoconf-2.72/build-aux/gendocs.sh:117:  wget \"$templateurl\"
+buildroot/output/build/host-autoconf-2.72/ChangeLog.2:4406:	* Makefile.am (wget-update): New target.
+buildroot/output/build/host-autoconf-2.72/maint.mk:1655:	wget --no-verbose --directory-prefix $(PODIR) --no-directories --recursive --level 1 --accept .po --accept .po.1 $(POURL) && \
+buildroot/output/build/host-autoconf-2.72/ChangeLog.3:6411:	(wget-update, cvs-update): Likewise.
+buildroot/output/build/host-autoconf-2.72/ChangeLog.3:11320:	(wget_files): Remove.
+buildroot/output/build/host-autoconf-2.72/ChangeLog.3:11362:	(local_updates: Remove wget-update, po-update.
+buildroot/output/build/host-autoconf-2.72/ChangeLog.3:11363:	(po_repo, do-po-update, po-update, wget_files, get-targets): Remove.
+buildroot/output/build/host-autoconf-2.72/ChangeLog.3:12773:	(wget_files): Update config.guess, config.sub, texinfo.tex by
+buildroot/output/build/host-autoconf-2.72/ChangeLog.3:12774:	`wget-update', now that their URLs work again.
+buildroot/output/build/host-autoconf-2.72/ChangeLog.3:15755:	* Makefile.cfg (wget_files): Remove config.guess, config.sub,
+buildroot/output/build/host-autoconf-2.72/ChangeLog.3:15757:	* Makefile.maint (wget_files, cvs_files):
+buildroot/output/build/host-autoconf-2.72/ChangeLog.3:18415:	* Makefile.maint (wget_files): Remove ansi2knr.c.
+buildroot/output/build/host-xxhash-0.8.3/.github/workflows/ci.yml:350:        wget https://cmake.org/files/v3.10/cmake-3.10.0-Linux-x86_64.tar.gz
+buildroot/output/build/host-xxhash-0.8.3/cli/xsum_os_specific.c:446: * Wrap `XSUM_wmain()` using `main()` and `__wgetmainargs()` on MinGW without
+buildroot/output/build/host-xxhash-0.8.3/cli/xsum_os_specific.c:449: * `__wgetmainargs()` is used in the CRT startup to retrieve the arguments for
+buildroot/output/build/host-xxhash-0.8.3/cli/xsum_os_specific.c:461: * https://docs.microsoft.com/en-us/cpp/c-runtime-library/getmainargs-wgetmainargs?view=vs-2019
+buildroot/output/build/host-xxhash-0.8.3/cli/xsum_os_specific.c:470:int __cdecl __wgetmainargs(
+buildroot/output/build/host-xxhash-0.8.3/cli/xsum_os_specific.c:486:    if (__wgetmainargs(&utf16_argc, &utf16_argv, &utf16_envp, 1, &startinfo) < 0)
+buildroot/output/build/host-hiredis-1.3.0/.travis.yml:21:        wget https://github.com/redis/redis/archive/6.0.6.tar.gz;
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/NEWS:3689:  _IO_switch_to_main_wget_area, _IO_switch_to_wget_mode,
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/po/Makefile:94:WGET = wget
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/localedata/unicode-gen/Makefile:42:WGET = wget
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/manual/pipe.texi:211:@c     _IO_switch_to_main_wget_area @asucorrupt @acucorrupt
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/libc.map:45:    _IO_switch_to_main_wget_area; _IO_switch_to_wbackup_area;
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/libc.map:46:    _IO_switch_to_wget_mode; _IO_unsave_wmarkers; _IO_wdefault_doallocate;
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/first-versions.h:414:#define FIRST_VERSION_libc__IO_switch_to_main_wget_area_STRING "GLIBC_2.17"
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/first-versions.h:415:#define FIRST_VERSION_libc__IO_switch_to_main_wget_area_HASH 0x6969197
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/first-versions.h:416:#define FIRST_VERSION_libc__IO_switch_to_main_wget_area GLIBC_2_17
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/first-versions.h:420:#define FIRST_VERSION_libc__IO_switch_to_wget_mode_STRING "GLIBC_2.17"
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/first-versions.h:421:#define FIRST_VERSION_libc__IO_switch_to_wget_mode_HASH 0x6969197
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/first-versions.h:422:#define FIRST_VERSION_libc__IO_switch_to_wget_mode GLIBC_2_17
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/Versions.v.i:1114:    _IO_switch_to_main_wget_area; _IO_switch_to_wbackup_area;
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/Versions.v.i:1115:    _IO_switch_to_wget_mode; _IO_unsave_wmarkers; _IO_wdefault_doallocate;
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/ldbl-compat-choose.h:637:# define LONG_DOUBLE_COMPAT_CHOOSE_libc__IO_switch_to_main_wget_area(a, b) a
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/ldbl-compat-choose.h:639:# define LONG_DOUBLE_COMPAT_CHOOSE_libc__IO_switch_to_main_wget_area(a, b) b
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/ldbl-compat-choose.h:647:# define LONG_DOUBLE_COMPAT_CHOOSE_libc__IO_switch_to_wget_mode(a, b) a
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/ldbl-compat-choose.h:649:# define LONG_DOUBLE_COMPAT_CHOOSE_libc__IO_switch_to_wget_mode(a, b) b
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/Versions.v:1085:    _IO_switch_to_main_wget_area; _IO_switch_to_wbackup_area;
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/Versions.v:1086:    _IO_switch_to_wget_mode; _IO_unsave_wmarkers; _IO_wdefault_doallocate;
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/Versions.tmp:70:libc  GLIBC_2.17     _IO_switch_to_main_wget_area; _IO_switch_to_wbackup_area;
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/build/Versions.tmp:71:libc  GLIBC_2.17     _IO_switch_to_wget_mode; _IO_unsave_wmarkers; _IO_wdefault_doallocate;
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/wfileops.c:773:  if (was_writing && _IO_switch_to_wget_mode (fp))
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/Versions:113:    _IO_switch_to_main_wget_area; _IO_switch_to_wbackup_area;
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/Versions:114:    _IO_switch_to_wget_mode; _IO_unsave_wmarkers; _IO_wdefault_doallocate;
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/libioP.h:385:extern void _IO_switch_to_main_wget_area (FILE *) __THROW;
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/libioP.h:386:libc_hidden_proto (_IO_switch_to_main_wget_area)
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/libioP.h:389:extern int _IO_switch_to_wget_mode (FILE *);
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/libioP.h:390:libc_hidden_proto (_IO_switch_to_wget_mode)
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/wgenops.c:53:_IO_switch_to_main_wget_area (FILE *fp)
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/wgenops.c:68:libc_hidden_def (_IO_switch_to_main_wget_area)
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/wgenops.c:229:    if (_IO_switch_to_wget_mode (fp) == EOF)
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/wgenops.c:235:      _IO_switch_to_main_wget_area (fp);
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/wgenops.c:259:    if (_IO_switch_to_wget_mode (fp) == EOF)
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/wgenops.c:265:      _IO_switch_to_main_wget_area (fp);
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/wgenops.c:391:_IO_switch_to_wget_mode (FILE *fp)
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/wgenops.c:412:libc_hidden_def (_IO_switch_to_wget_mode)
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/wgenops.c:418:    _IO_switch_to_main_wget_area (fp);  /* Just in case. */
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/wgenops.c:547:    _IO_switch_to_wget_mode (fp);
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/libio/wgenops.c:585:	_IO_switch_to_main_wget_area (fp);
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/mach/hurd/i386/libc.abilist:211:GLIBC_2.2.6 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/mach/hurd/i386/libc.abilist:213:GLIBC_2.2.6 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/mach/hurd/x86_64/libc.abilist:107:GLIBC_2.38 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/mach/hurd/x86_64/libc.abilist:109:GLIBC_2.38 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/s390/s390-32/libc.abilist:1895:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/s390/s390-32/libc.abilist:1897:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/s390/s390-64/libc.abilist:199:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/s390/s390-64/libc.abilist:201:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/riscv/rv64/libc.abilist:106:GLIBC_2.27 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/riscv/rv64/libc.abilist:108:GLIBC_2.27 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/riscv/rv32/libc.abilist:106:GLIBC_2.33 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/riscv/rv32/libc.abilist:108:GLIBC_2.33 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/arm/be/libc.abilist:737:GLIBC_2.4 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/arm/be/libc.abilist:739:GLIBC_2.4 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/arm/le/libc.abilist:734:GLIBC_2.4 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/arm/le/libc.abilist:736:GLIBC_2.4 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/mips/mips64/n32/libc.abilist:1496:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/mips/mips64/n32/libc.abilist:1498:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/mips/mips64/n64/libc.abilist:1492:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/mips/mips64/n64/libc.abilist:1494:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/mips/mips32/fpu/libc.abilist:1498:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/mips/mips32/fpu/libc.abilist:1500:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/mips/mips32/nofpu/libc.abilist:1496:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/mips/mips32/nofpu/libc.abilist:1498:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/powerpc/powerpc64/be/libc.abilist:263:GLIBC_2.3 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/powerpc/powerpc64/be/libc.abilist:265:GLIBC_2.3 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/powerpc/powerpc64/le/libc.abilist:106:GLIBC_2.17 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/powerpc/powerpc64/le/libc.abilist:108:GLIBC_2.17 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/powerpc/powerpc32/fpu/libc.abilist:1897:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/powerpc/powerpc32/fpu/libc.abilist:1899:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/powerpc/powerpc32/nofpu/libc.abilist:1901:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/powerpc/powerpc32/nofpu/libc.abilist:1903:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/or1k/libc.abilist:107:GLIBC_2.35 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/or1k/libc.abilist:109:GLIBC_2.35 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/sparc/sparc64/libc.abilist:238:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/sparc/sparc64/libc.abilist:240:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/sparc/sparc32/libc.abilist:1893:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/sparc/sparc32/libc.abilist:1895:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/i386/libc.abilist:1935:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/i386/libc.abilist:1937:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/x86_64/x32/libc.abilist:106:GLIBC_2.16 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/x86_64/x32/libc.abilist:108:GLIBC_2.16 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/x86_64/64/libc.abilist:189:GLIBC_2.2.5 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/x86_64/64/libc.abilist:191:GLIBC_2.2.5 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/hppa/libc.abilist:233:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/hppa/libc.abilist:235:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/csky/libc.abilist:106:GLIBC_2.29 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/csky/libc.abilist:108:GLIBC_2.29 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/microblaze/be/libc.abilist:106:GLIBC_2.18 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/microblaze/be/libc.abilist:108:GLIBC_2.18 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/microblaze/le/libc.abilist:106:GLIBC_2.18 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/microblaze/le/libc.abilist:108:GLIBC_2.18 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/m68k/coldfire/libc.abilist:738:GLIBC_2.4 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/m68k/coldfire/libc.abilist:740:GLIBC_2.4 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/m68k/m680x0/libc.abilist:1891:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/m68k/m680x0/libc.abilist:1893:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/arc/libc.abilist:106:GLIBC_2.32 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/arc/libc.abilist:108:GLIBC_2.32 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/loongarch/lp64/libc.abilist:107:GLIBC_2.36 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/loongarch/lp64/libc.abilist:109:GLIBC_2.36 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/alpha/gettimeofday.c:24:weak_alias (___gettimeofday, __wgettimeofday);
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/alpha/gettimeofday.c:26:default_symbol_version (__wgettimeofday,   gettimeofday, GLIBC_2.1);
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/alpha/libc.abilist:1933:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/alpha/libc.abilist:1935:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/sh/be/libc.abilist:233:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/sh/be/libc.abilist:235:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/sh/le/libc.abilist:233:GLIBC_2.2 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/sh/le/libc.abilist:235:GLIBC_2.2 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/aarch64/libc.abilist:106:GLIBC_2.17 _IO_switch_to_main_wget_area F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/sysdeps/unix/sysv/linux/aarch64/libc.abilist:108:GLIBC_2.17 _IO_switch_to_wget_mode F
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/ChangeLog.old/ChangeLog.10:9444:	_IO_switch_to_wget_mode instead of _IO_switch_to_get_mode.
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/ChangeLog.old/ChangeLog.10:9446:	(_IO_switch_to_wget_mode): Likewise.
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/ChangeLog.old/ChangeLog.10:9450:	_IO_switch_to_wget_mode, not _IO_switch_to_get_mode.
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/ChangeLog.old/ChangeLog.12:8181:	(_IO_switch_to_wget_mode): Likewise.
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/ChangeLog.old/ChangeLog.18:28889:	(_IO_switch_to_main_wget_area): Likewise.
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/ChangeLog.old/ChangeLog.18:28902:	(_IO_switch_to_wget_mode): Likewise.
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/ChangeLog.old/ChangeLog.18:81249:	(_IO_switch_to_main_wget_area, _IO_switch_to_wbackup_area)
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/ChangeLog.old/ChangeLog.18:81250:	(_IO_switch_to_wget_mode, _IO_wsetb, _IO_sputbackwc)
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/ChangeLog.old/ChangeLog.18:81290:	(_IO_switch_to_wget_mode_internal, _IO_unsave_markers_internal)
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/ChangeLog.old/ChangeLog.18:81291:	(_IO_switch_to_main_wget_area_internal, _IO_wdo_write_internal)
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/ChangeLog.old/ChangeLog.17:11853:	* libio/libioP.h (_IO_switch_to_get_mode, _IO_switch_to_wget_mode,
+buildroot/output/build/glibc-2.41-70-g1502c248d58cb99a203731707987a4342926e830/ChangeLog.old/ChangeLog.17:11887:	_IO_switch_to_wget_mode_internal, _IO_padn_internal,
+buildroot/output/build/linux-5.15.15/scripts/kconfig/nconf.gui.c:271:	while ((res = wgetch(win))) {
+buildroot/output/build/linux-5.15.15/scripts/kconfig/nconf.gui.c:384:	while ((res = wgetch(form_win))) {
+buildroot/output/build/linux-5.15.15/scripts/kconfig/nconf.gui.c:563:		res = wgetch(win);
+buildroot/output/build/linux-5.15.15/scripts/kconfig/lxdialog/textbox.c:129:		key = wgetch(dialog);
+buildroot/output/build/linux-5.15.15/scripts/kconfig/lxdialog/util.c:555:	key = wgetch(win);
+buildroot/output/build/linux-5.15.15/scripts/kconfig/lxdialog/util.c:556:	key2 = wgetch(win);
+buildroot/output/build/linux-5.15.15/scripts/kconfig/lxdialog/util.c:558:		key3 = wgetch(win);
+buildroot/output/build/linux-5.15.15/scripts/kconfig/lxdialog/menubox.c:270:		key = wgetch(menu);
+buildroot/output/build/linux-5.15.15/scripts/kconfig/lxdialog/yesno.c:66:		key = wgetch(dialog);
+buildroot/output/build/linux-5.15.15/scripts/kconfig/lxdialog/checklist.c:196:		key = wgetch(dialog);
+buildroot/output/build/linux-5.15.15/scripts/kconfig/lxdialog/inputbox.c:107:		key = wgetch(dialog);
+buildroot/output/build/linux-5.15.15/scripts/kconfig/nconf.c:1094:			res = wgetch(menu_win(curses_menu));
+buildroot/output/build/linux-5.15.15/scripts/kconfig/nconf.c:1275:			res = wgetch(menu_win(curses_menu));
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:58:    wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:77:    wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:95:    wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:113:	wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:131:    wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:148:    wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:164:    wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:181:    wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:198:    wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:254:    wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:286:    wgetfile($fwfile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:299:	wgetfile($outfile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:314:    wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:331:    wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:346:    wgetfile($fwfile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:359:    wgetfile($fwfile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:378:	wgetfile($fwfile, "$url/$fwfile");
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:395:    wgetfile($archive, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:451:	wgetfile($fwfile, "$url/$fwfile");
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:472:	wgetfile($fwfile, "$url/$fwfile");
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:489:    wgetfile($fwfile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:502:    wgetfile($fwfile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:515:	wgetfile($outfile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:533:	wgetfile($sourcefile, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:567:    wgetfile($file1, $url . $file1);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:570:    wgetfile($file2, $url . $file2);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:573:    wgetfile($file3, $url2 . $file3);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:583:    wgetfile($firmware, $url);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:640:    wgetfile($zipfile, $url . $zipfile);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:658:    wgetfile($zipfile, $url . $zipfile);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:673:    wgetfile($fwfile, $url . $fwfile);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:689:    wgetfile($zipfile, $url . $zipfile);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:708:	wgetfile($file1, $url . $file1);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:712:	wgetfile($file2, $url . $file2);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:728:    wgetfile($sourcefile, $url . $sourcefile);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:745:    wgetfile($sourcefile, $url . $sourcefile);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:765:	wgetfile($fwfile, "$url/$fwfile");
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:784:    wgetfile($sourcefile, $url . $sourcefile);
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:816:    if (system("which wget > /dev/null 2>&1")) {
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:817:	die "This firmware requires the wget command - see http://wget.sunsite.dk/\n";
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:827:sub wgetfile {
+buildroot/output/build/linux-5.15.15/scripts/get_dvb_firmware:831:	system("wget -O \"$sourcefile\" \"$url\"") and die "wget failed - unable to download firmware";
+buildroot/output/build/linux-5.15.15/scripts/get_maintainer.pl:745:		my $output = `wget --spider -q --no-check-certificate --timeout 10 --tries 1 $value`;
+buildroot/output/build/linux-5.15.15/scripts/get_maintainer.pl:779:		my $output = `wget --spider -q --no-check-certificate --timeout 10 --tries 1 $url`;
+buildroot/output/build/linux-5.15.15/scripts/extract_xc3028.pl:9:#		wget http://www.twinhan.com/files/AW/BDA T/20080303_V1.0.6.7.zip
+buildroot/output/build/linux-5.15.15/scripts/extract_xc3028.pl:10:#		or wget http://www.stefanringel.de/pub/20080303_V1.0.6.7.zip
+buildroot/output/build/linux-5.15.15/scripts/extract_xc3028.pl:12:#		wget http://www.steventoth.net/linux/xc5000/HVR-12x0-14x0-17x0_1_25_25271_WHQL.zip
+buildroot/output/build/linux-5.15.15/tools/thermal/tmon/tui.c:415:	wgetnstr(w, buf, 31);
+buildroot/output/build/linux-5.15.15/tools/thermal/tmon/tui.c:471:	while ((ch = wgetch(cooling_device_window)) != EOF) {
+buildroot/output/build/linux-5.15.15/tools/power/pm-graph/README:601:	host%> wget https://raw.githubusercontent.com/intel/pm-graph/master/tools/android.sh
+buildroot/output/build/linux-5.15.15/tools/testing/kunit/qemu_configs/riscv.py:14:		os.system('wget ' + GITHUB_OPENSBI_URL)
+buildroot/output/build/linux-5.15.15/tools/testing/selftests/wireguard/qemu/Makefile:41:	flock -x $$@.lock -c '[ -f $$@ ] && exit 0; wget -O $$@.tmp $(MIRROR)$(1) || wget -O $$@.tmp $(2)$(1) || rm -f $$@.tmp; [ -f $$@.tmp ] || exit 1; if echo "$(3)  $$@.tmp" | sha256sum -c -; then mv $$@.tmp $$@; else rm -f $$@.tmp; exit 71; fi'
+buildroot/output/build/linux-5.15.15/tools/testing/ktest/sample.conf:322:#POWER_CYCLE = wget --no-proxy -O /dev/null -q  --auth-no-challenge 'http://admin:admin@power/outlet?5=CCL'
+buildroot/output/build/linux-5.15.15/tools/testing/ktest/sample.conf:882:#POWER_OFF = wget --no-proxy -O /dev/null -q  --auth-no-challenge 'http://admin:admin@power/outlet?5=OFF'
+buildroot/output/build/linux-5.15.15/tools/testing/ktest/ktest.pl:429: POWER_CYCLE = wget --no-proxy -O /dev/null -q  --auth-no-challenge 'http://admin:admin\@power/outlet?5=CCL'
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:166:    # echo 'enable_hist:net:netif_receive_skb if filename==/usr/bin/wget' > \
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:169:    # echo 'disable_hist:net:netif_receive_skb if comm==wget' > \
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1015:  wget.
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1024:  event, with an 'if filename==/usr/bin/wget' filter.  The effect of
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1027:  sched_process_exec event with a filename of '/usr/bin/wget'.  When
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1031:    # echo 'enable_hist:net:netif_receive_skb if filename==/usr/bin/wget' > \
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1037:  filter 'comm==wget'::
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1039:    # echo 'disable_hist:net:netif_receive_skb if comm==wget' > \
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1043:  trigger filter matches 'comm==wget', the netif_receive_skb hist
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1047:  into the hash table for only the duration of the wget.  Executing a
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1048:  wget command and then listing the 'hist' file will display the
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1049:  output generated by the wget command::
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1051:    $ wget https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.19.xz
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1128:  lengths for the duration of the wget command.
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1156:    # echo 'enable_event:net:netif_receive_skb if filename==/usr/bin/wget' > \
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1159:    # echo 'disable_event:net:netif_receive_skb if comm==wget' > \
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1168:    enable_event:net:netif_receive_skb:unlimited if filename==/usr/bin/wget
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1169:    enable_hist:net:netif_receive_skb:unlimited if filename==/usr/bin/wget
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1172:    enable_event:net:netif_receive_skb:unlimited if comm==wget
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1173:    disable_hist:net:netif_receive_skb:unlimited if comm==wget
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1176:  sched_process_exit events is hit and matches 'wget', it enables or
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1179:  duration.  Run the wget command again::
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1181:    $ wget https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.19.xz
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1200:                wget-15108 [000] ..s1 31769.606929: netif_receive_skb: dev=lo skbaddr=ffff88009c353100 len=60
+buildroot/output/build/linux-5.15.15/Documentation/trace/histogram.rst:1201:                wget-15108 [000] ..s1 31769.606999: netif_receive_skb: dev=lo skbaddr=ffff88009c353200 len=60
+buildroot/output/build/linux-5.15.15/Documentation/scsi/wd719x.rst:18:	wget http://support.wdc.com/download/archive/pciscsi.exe
+buildroot/output/build/linux-5.15.15/arch/arm/boot/dts/sun8i-h3-nanopi-r1.dts:5: * Copyright (C) 2020 Yu-Tung Chang <mtwget@gmail.com>
+buildroot/output/build/linux-5.15.15/arch/arm/boot/dts/sun8i-h3-zeropi.dts:2: * Copyright (C) 2020 Yu-Tung Chang <mtwget@gmail.com>
+buildroot/output/build/gcc-final-14.3.0/contrib/ChangeLog:1475:	* download_prerequisites: Don't pass wget options to curl.
+buildroot/output/build/gcc-final-14.3.0/contrib/download_prerequisites:53:if type wget > /dev/null ; then
+buildroot/output/build/gcc-final-14.3.0/contrib/download_prerequisites:54:  fetch='wget'
+buildroot/output/build/gcc-final-14.3.0/gcc/rust/CONTRIBUTING.md:63:$ wget 'https://github.com/DoozyX/clang-format-lint-action/raw/v0.11/run-clang-format.py'
+buildroot/output/build/gcc-final-14.3.0/gcc/config/vms/vms-crtlmap.map:903:wgetch
+buildroot/output/build/gcc-final-14.3.0/gcc/config/vms/vms-crtlmap.map:904:wgetstr
+buildroot/output/build/gcc-final-14.3.0/ABOUT-NLS:275:     wget               |          [] [] [] [] [] []             [] |
+buildroot/output/build/gcc-final-14.3.0/ABOUT-NLS:378:     wget               | []    [] []    [] [] [] []       []    |
+buildroot/output/build/gcc-final-14.3.0/ABOUT-NLS:481:     wget               |                []       []          [] |
+buildroot/output/build/gcc-final-14.3.0/ABOUT-NLS:584:     wget               | [] [] []    []    [] []              []   | 25
+buildroot/output/build/gcc-final-14.3.0/libphobos/src/std/process.d:3708:executeShell(escapeShellCommand("wget", url, "-O", "dlang-index.html"));
+buildroot/output/build/gcc-final-14.3.0/libstdc++-v3/doc/html/manual/setup.html:64:wget https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.16.tar.gz
+buildroot/output/build/gcc-final-14.3.0/libstdc++-v3/doc/xml/manual/prerequisites.xml:80:wget https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.16.tar.gz
+buildroot/output/build/gcc-final-14.3.0/libstdc++-v3/src/filesystem/ops-common.h:143:  { return ::_wgetcwd(buf, size > (size_t)INT_MAX ? INT_MAX : (int)size); }
+buildroot/output/build/host-util-linux-2.41.1/ABOUT-NLS:319:     wget               |                       []                      [] |
+buildroot/output/build/host-util-linux-2.41.1/ABOUT-NLS:503:     wget               |     []     []                          []       |
+buildroot/output/build/host-util-linux-2.41.1/ABOUT-NLS:687:     wget               | []  []  []             [] []    []     [] []       |
+buildroot/output/build/host-util-linux-2.41.1/ABOUT-NLS:871:     wget               |             []                                |
+buildroot/output/build/host-util-linux-2.41.1/ABOUT-NLS:1055:     wget               | []           []     []  []      []    [] []       |
+buildroot/output/build/host-util-linux-2.41.1/ABOUT-NLS:1239:     wget               | []                 []    []      []          []   | 26
+buildroot/output/build/host-bison-3.8.2/ChangeLog:2010:	    $ mkdir -p ~/dlang && wget https://dlang.org/install.sh -O ~/dlang/install.sh
+buildroot/output/build/host-bison-3.8.2/build-aux/gendocs.sh:116:  wget \"$scripturl\"
+buildroot/output/build/host-bison-3.8.2/build-aux/gendocs.sh:117:  wget \"$templateurl\"
+buildroot/output/build/host-bison-3.8.2/ABOUT-NLS:319:     wget               |                       []                      [] |
+buildroot/output/build/host-bison-3.8.2/ABOUT-NLS:503:     wget               |     []     []                          []       |
+buildroot/output/build/host-bison-3.8.2/ABOUT-NLS:687:     wget               | []  []  []             [] []    []     [] []       |
+buildroot/output/build/host-bison-3.8.2/ABOUT-NLS:871:     wget               |             []                                |
+buildroot/output/build/host-bison-3.8.2/ABOUT-NLS:1055:     wget               | []           []     []  []      []    [] []       |
+buildroot/output/build/host-bison-3.8.2/ABOUT-NLS:1239:     wget               | []                 []    []      []          []   | 26
+buildroot/output/build/host-bison-3.8.2/lib/getprogname.c:195:  /* https://www.ibm.com/support/knowledgecenter/SSLTBW_2.1.0/com.ibm.zos.v2r1.bpxbd00/rtwgetp.htm */
+buildroot/output/build/host-bison-3.8.2/maint.mk:1628:	wget --no-verbose --directory-prefix $(PODIR) --no-directories --recursive --level 1 --accept .po --accept .po.1 $(POURL) && \
+buildroot/output/build/host-bison-3.8.2/ChangeLog-2012:12632:	* bootstrap (no_cache): New var, to accommodate different wget
+buildroot/output/build/host-bison-3.8.2/ChangeLog-2012:13335:	(po_repo, do-po-update, po-update, wget_files, get-targets):
+buildroot/output/build/host-bison-3.8.2/ChangeLog-2012:13339:	($(get-targets), cvs-files, automake_repo, wget-update, cvs-update):
+buildroot/output/build/host-bison-3.8.2/ChangeLog-2012:16069:	(rel-check): Use $(WGET) instead of wget.
+buildroot/output/build/host-bison-3.8.2/ChangeLog-2012:17904:	* Makefil

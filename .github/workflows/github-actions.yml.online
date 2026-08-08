@@ -1,0 +1,61 @@
+name: assignment-test
+on:
+    push:
+        tags-ignore:
+            - '*'
+        branches:
+            - '*'
+jobs:
+    full-test:
+        container: cuaesd/aesd-autotest:24-assignment7-buildroot
+        runs-on: self-hosted
+        timeout-minutes: 240
+        steps:
+          - uses: actions/checkout@v4
+            with:
+                 submodules: false
+                 
+          - name: Setup SSH Key for Submodules
+            run: |
+                  mkdir -p ~/.ssh
+                  
+                  echo "${{ secrets.ASSIGNMENT3 }}" > ~/.ssh/id_assignment3
+                  echo "${{ secrets.ASSIGNMENT7 }}" > ~/.ssh/id_assignment7
+                  chmod 600 ~/.ssh/id_assignment3
+                  chmod 600 ~/.ssh/id_assignment7
+                  ssh-keyscan github.com >> ~/.ssh/known_hosts
+                  # Build the custom SSH config file
+                  cat >> ~/.ssh/config <<END
+                  Host github.com
+                  HostName git@github.com:cu-ecen-aeld/assignments-3-and-later-hengjoontiang.git
+                  User git
+                  IdentityFile ~/.ssh/id_assignment3
+                  StrictHostKeyChecking yes
+                  Host github.com
+                  HostName git@github.com:cu-ecen-aeld/assignment-7-hengjoontiang.git
+                  User git
+                  IdentityFile ~/.ssh/id_assignment7
+                  StrictHostKeyChecking yes
+                  END
+          - name: checkout Submodules
+            run: |  
+                   git config -f .gitmodules submodule.assignment-7-hengjoontiang.url git@github.com:cu-ecen-aeld/assignment-7-hengjoontiang.git
+                   git config -f .gitmodules submodule.assignments-3-and-later-hengjoontiang.url git@github.com:cu-ecen-aeld/assignments-3-and-later-hengjoontiang.git
+                   export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_assignment3"
+                   git submodule sync
+                   git submodule update --init --recursive --remote
+                   export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_assignment7"
+                   git submodule sync
+                   git submodule update --init --recursive --remote
+          
+          - uses: webfactory/ssh-agent@v0.5.3
+            with:
+                ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+                               
+          - name: Run full test
+            env:
+              GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
+              FORCE_UNSAFE_CONFIGURE: 1
+            run: | 
+                  ./full-test.sh
+                  
