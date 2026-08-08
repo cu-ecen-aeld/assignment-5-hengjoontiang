@@ -11,12 +11,15 @@ LDD_VERSION = '5c3cae6'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
-LDD_SITE = 'git@github.com:cu-ecen-aeld/assignment-7-hengjoontiang.git'
+#LDD_SITE = 'git@github.com:cu-ecen-aeld/assignment-7-hengjoontiang.git'
+
+LDD_SITE = '../assignment-7-hengjoontiang/'
 #git@github.com:cu-ecen-aeld/assignment-7-hengjoontiang.git
 #AESD_ASSIGNMENTS_SITE = 'https://github.com/cu-ecen-aeld/assignment-7-hengjoontiang.git
-LDD_SITE_METHOD = git
-LDD_GIT_SUBMODULES = YES
-
+#LDD_SITE_METHOD = git
+LDD_SITE_METHOD = local
+#LDD_GIT_SUBMODULES = YES
+#AESD_ASSIGNMENTS_SITE_METHOD = git
 
 
 

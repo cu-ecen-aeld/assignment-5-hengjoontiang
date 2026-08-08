@@ -13,10 +13,14 @@ AESD_ASSIGNMENTS_VERSION = '885dd66'
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
 #git@github.com:cu-ecen-aeld/assignments-3-and-later-hengjoontiang.git
-AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-hengjoontiang.git'
+#AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-hengjoontiang.git'
+AESD_ASSIGNMENTS_SITE = '../assignments-3-and-later-hengjoontiang/'
 #AESD_ASSIGNMENTS_SITE = 'https://github.com/cu-ecen-aeld/assignments-3-and-later-hengjoontiang.git'
-AESD_ASSIGNMENTS_SITE_METHOD = git
-AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
+#AESD_ASSIGNMENTS_SITE_METHOD = git
+AESD_ASSIGNMENTS_SITE_METHOD = local
+#AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
+
+
 
 
 define AESD_ASSIGNMENTS_BUILD_CMDS
