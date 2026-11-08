@@ -1,0 +1,6 @@
+config BR2_PACKAGE_AESDCHAR
+	bool "aesdchar"
+	#need to enable Linux Kernel is checked under Kernel  in make menuconfig
+	depends on BR2_LINUX_KERNEL
+	help
+	  The aesdchar device driver package that uses circular buffer

@@ -45,9 +45,9 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	
 	echo "@D=$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/bin"
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/bin
-	echo "$(INSTALL) -m 0755 $(@D)/server/aesdsocket-start-stop $(TARGET_DIR)/etc/init.d/S99aesdsocket"
-	echo "display contents aesdsocket-start-stop"
-	cat $(@D)/server/aesdsocket-start-stop
+	#echo "$(INSTALL) -m 0755 $(@D)/server/aesdsocket-start-stop $(TARGET_DIR)/etc/init.d/S99aesdsocket"
+	#echo "display contents aesdsocket-start-stop"
+	#cat $(@D)/server/aesdsocket-start-stop
 	
 	
 	

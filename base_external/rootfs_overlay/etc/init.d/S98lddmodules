@@ -10,7 +10,7 @@
 
 
 
-ssh-keyscan -p 10022 localhost >> ~/.ssh/known_hosts
+#ssh-keyscan -p 10022 localhost >> ~/.ssh/known_hosts
 
 #Enable the Overlay in Buildroot
 #Configure Buildroot to include your overlay:
@@ -170,5 +170,38 @@ esac
 #    exit 1
 #    
 #esac
+
+
+
+case "$1" in
+    start)
+        echo "Loading aesdchar driver..."
+        # Load the module
+        #if insmod /lib/modules/$(uname -r)/extra/aesdchar.ko; then
+        #    # Create device nodes (major number may vary, check 'cat /proc/devices')
+        #    #MAJOR=$(awk "\$2==\"${DEVICE_NAME}\" {print \$1}" /proc/devices)
+        #    MAJOR=$(awk "\$2==\"aesdchar\" {print \$1}" /proc/devices)
+        #    echo "aesdchar MAJOR=" ${MAJOR}
+        #    mknod -m 660 /dev/aesdchar c ${MAJOR} 0
+        if modprobe aesdchar  ; then    
+            echo "OK"
+        else
+            echo "FAIL"
+        fi
+        ;;
+    stop)
+        echo "Unloading aesdchar driver..."
+        rmmod aesdchar
+        rm -f /dev/aesdchar
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;  
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+        ;;
+esac
 exit 0
 

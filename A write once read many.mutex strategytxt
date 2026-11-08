@@ -1,0 +1,118 @@
+C++ version
+
+A write-once-read-many (WORM) synchronization lock allows multiple threads to read concurrently, but permits only a single write operation ever, after which writing is permanently disabled or blocked.Conceptual DesignState tracking: Keep a counter or flag for the write status (e.g., written = false, active reader count).Reader lock: Allows multiple concurrent readers as long as a write is not actively happening, incrementing a reader count.Writer lock: Allowed only if no readers are active and no previous write has occurred. Once the write completes, it sets the written flag to prevent future writes.C++ Implementation ExampleYou can implement this using standard components like std::mutex and condition variables, or standard shared locks. Here is a clean pattern:cpp#include <mutex>
+#include <condition_variable>
+
+class WormMutex {
+private:
+    std::mutex mtx;
+    std::condition_variable cv;
+    int reader_count = 0;
+    bool is_writing = false;
+    bool has_written = false; // Ensures write-once constraint
+
+public:
+    void lock_read() {
+        std::unique_lock<std::mutex> lock(mtx);
+        // Wait while a thread is currently writing
+        cv.wait(lock, [this]() { return !is_writing; });
+        reader_count++;
+    }
+
+    void unlock_read() {
+        std::unique_lock<std::mutex> lock(mtx);
+        reader_count--;
+        if (reader_count == 0) {
+            cv.notify_all();
+        }
+    }
+
+    bool lock_write() {
+        std::unique_lock<std::mutex> lock(mtx);
+        // Fail or block if already written once or currently reading/writing
+        if (has_written || reader_count > 0 || is_writing) {
+            return false; 
+        }
+        is_writing = true;
+        return true;
+    }
+
+    void unlock_write() {
+        std::unique_lock<std::mutex> lock(mtx);
+        is_writing = false;
+        has_written = true; // Mark as permanently written
+        cv.notify_all();
+    }
+};
+
+
+C version
+A Write-Once-Read-Many (WORM) synchronization structure in C allows a single writer to set a value once, after which an unlimited number of reader threads can access it concurrently without locking overhead.Here is a clean implementation using POSIX threads (pthreads) and atomic operations (stdatomic.h) for state management:WORM Mutex Implementation in Cc#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <stdatomic.h>
+#include <unistd.h>
+
+typedef enum {
+    WORM_EMPTY = 0,
+    WORM_WRITING,
+    WORM_READY
+} worm_state_t;
+
+typedef struct {
+    atomic_int state;       // Tracks lifecycle: EMPTY -> WRITING -> READY
+    pthread_mutex_t lock;   // Ensures only one writer attempts initialization
+    int data;               // The shared payload
+} worm_t;
+
+// Initialize the WORM structure
+void worm_init(worm_t *w) {
+    atomic_init(&w->state, WORM_EMPTY);
+    pthread_mutex_init(&w->lock, NULL);
+    w->data = 0;
+}
+
+// Writer tries to write once. Returns 1 on success, 0 if already written/writing.
+int worm_write(worm_t *w, int value) {
+    // Fast path: check without locking if already written
+    if (atomic_load_explicit(&w->state, memory_order_acquire) == WORM_READY) {
+        return 0; 
+    }
+
+    pthread_mutex_lock(&w->lock);
+    
+    // Double-check state under lock
+    if (w->state != WORM_EMPTY) {
+        pthread_mutex_unlock(&w->lock);
+        return 0;
+    }
+
+    // Mark as writing
+    atomic_store_explicit(&w->state, WORM_WRITING, memory_order_relaxed);
+    
+    // Perform the single write
+    w->data = value;
+    
+    // Publish the data and transition to READY with release semantics
+    atomic_store_explicit(&w->state, WORM_READY, memory_order_release);
+    
+    pthread_mutex_unlock(&w->lock);
+    return 1;
+}
+
+// Reader reads data safely without locking once it is ready
+int worm_read(worm_t *w, int *out_value) {
+    // If data is not ready yet, read fails
+    if (atomic_load_explicit(&w->state, memory_order_acquire) != WORM_READY) {
+        return 0;
+    }
+    
+    *out_value = w->data;
+    return 1;
+}
+
+// Cleanup resources
+void worm_destroy(worm_t *w) {
+    pthread_mutex_destroy(&w->lock);
+}
+Use code with caution.How It WorksLock-free Reads: Once state transitions to WORM_READY, reader threads call worm_read which only performs an atomic load with acquire memory ordering—completely bypassing mutex contention.Exclusive Single Write: The standard pthread_mutex_t is used exclusively during the write phase to prevent multiple concurrent writers from racing to populate the value.

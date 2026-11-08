@@ -1,0 +1,793 @@
+starting test with SKIP_BUILD="" and DO_VALIDATE=""
+Running test with user hengjt
+Agent pid 280454
+assignment=assignment8-buildroot
+Executing assignment test script
+starting test with SKIP_BUILD  and DO_VALIDATE 
+~/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8 ~/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/assignment-autotest/test/assignment8-buildroot
+Private key is not set, attempts to clone may fail
+Or CI environment may have setup SSH authentication already...
+Running as:
+hengjt
+Added known host github.com:
+Running build.sh for the first time
+Agent pid 280472
+MISSING BUILDROOT CONFIGURATION FILE
+USING base_external/configs/aesd_qemu_defconfig
+make: Entering directory '/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot'
+#
+# configuration written to /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/.config
+#
+make: Leaving directory '/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot'
+Running build.sh for the second time as user:
+hengjt
+Agent pid 280605
+USING EXISTING BUILDROOT CONFIG
+To force update, delete .config or make changes using make menuconfig and build again.
+make: Entering directory '/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot'
+/usr/bin/make -j1  O=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output HOSTCC="/usr/bin/gcc" HOSTCXX="/usr/bin/g++" syncconfig
+[7m>>> aesd-assignments '885dd66' Syncing from source dir '../assignments-3-and-later-hengjoontiang/'[27m
+rsync -au --chmod=u=rwX,go=rX  --exclude .svn --exclude .git --exclude .hg --exclude .bzr --exclude CVS '../assignments-3-and-later-hengjoontiang/'/ /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'
+[7m>>> aesd-assignments '885dd66' Configuring[27m
+[7m>>> aesd-assignments '885dd66' Building[27m
+#/usr/bin/make -j17 GIT_DIR=. PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" AR="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-ar" AS="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-as" LD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-ld" NM="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-nm" CC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc" GCC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc" CPP="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-cpp" CXX="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-g++" FC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gfortran" F77="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gfortran" RANLIB="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-ranlib" READELF="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-readelf" STRIP="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-strip" OBJCOPY="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-objcopy" OBJDUMP="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-objdump" AR_FOR_BUILD="/usr/bin/ar" AS_FOR_BUILD="/usr/bin/as" CC_FOR_BUILD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc" GCC_FOR_BUILD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc" CXX_FOR_BUILD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/g++" LD_FOR_BUILD="/usr/bin/ld" CPPFLAGS_FOR_BUILD="-I/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include" CFLAGS_FOR_BUILD="-O2 -I/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include" CXXFLAGS_FOR_BUILD="-O2 -I/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include" LDFLAGS_FOR_BUILD="-L/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib -Wl,-rpath,/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib" FCFLAGS_FOR_BUILD="" DEFAULT_ASSEMBLER="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-as" DEFAULT_LINKER="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-ld" CPPFLAGS="-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64" CFLAGS="-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -O2 -g0 -D_FORTIFY_SOURCE=1" CXXFLAGS="-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -O2 -g0 -D_FORTIFY_SOURCE=1" LDFLAGS="" FCFLAGS=" -O2 -g0" FFLAGS=" -O2 -g0" PKG_CONFIG="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/pkg-config" STAGING_DIR="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/aarch64-buildroot-linux-gnu/sysroot" INTLTOOL_PERL=/usr/bin/perl CXX=no -C /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/finder-app all
+/usr/bin/make -j17 GIT_DIR=. PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" AR="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-ar" AS="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-as" LD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-ld" NM="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-nm" CC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc" GCC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc" CPP="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-cpp" CXX="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-g++" FC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gfortran" F77="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gfortran" RANLIB="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-ranlib" READELF="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-readelf" STRIP="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-strip" OBJCOPY="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-objcopy" OBJDUMP="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-objdump" AR_FOR_BUILD="/usr/bin/ar" AS_FOR_BUILD="/usr/bin/as" CC_FOR_BUILD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc" GCC_FOR_BUILD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc" CXX_FOR_BUILD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/g++" LD_FOR_BUILD="/usr/bin/ld" CPPFLAGS_FOR_BUILD="-I/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include" CFLAGS_FOR_BUILD="-O2 -I/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include" CXXFLAGS_FOR_BUILD="-O2 -I/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include" LDFLAGS_FOR_BUILD="-L/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib -Wl,-rpath,/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib" FCFLAGS_FOR_BUILD="" DEFAULT_ASSEMBLER="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-as" DEFAULT_LINKER="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-ld" CPPFLAGS="-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64" CFLAGS="-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -O2 -g0 -D_FORTIFY_SOURCE=1" CXXFLAGS="-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -O2 -g0 -D_FORTIFY_SOURCE=1" LDFLAGS="" FCFLAGS=" -O2 -g0" FFLAGS=" -O2 -g0" PKG_CONFIG="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/pkg-config" STAGING_DIR="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/aarch64-buildroot-linux-gnu/sysroot" INTLTOOL_PERL=/usr/bin/perl CXX=no -C /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/finder-app
+/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc -o writer writer.c -I.
+#echo "/usr/bin/make -j17 GIT_DIR=. PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" AR="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-ar" AS="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-as" LD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-ld" NM="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-nm" CC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc" GCC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc" CPP="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-cpp" CXX="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-g++" FC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gfortran" F77="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gfortran" RANLIB="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-ranlib" READELF="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-readelf" STRIP="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-strip" OBJCOPY="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-objcopy" OBJDUMP="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-objdump" AR_FOR_BUILD="/usr/bin/ar" AS_FOR_BUILD="/usr/bin/as" CC_FOR_BUILD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc" GCC_FOR_BUILD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc" CXX_FOR_BUILD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/g++" LD_FOR_BUILD="/usr/bin/ld" CPPFLAGS_FOR_BUILD="-I/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include" CFLAGS_FOR_BUILD="-O2 -I/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include" CXXFLAGS_FOR_BUILD="-O2 -I/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include" LDFLAGS_FOR_BUILD="-L/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib -Wl,-rpath,/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib" FCFLAGS_FOR_BUILD="" DEFAULT_ASSEMBLER="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-as" DEFAULT_LINKER="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-ld" CPPFLAGS="-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64" CFLAGS="-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -O2 -g0 -D_FORTIFY_SOURCE=1" CXXFLAGS="-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -O2 -g0 -D_FORTIFY_SOURCE=1" LDFLAGS="" FCFLAGS=" -O2 -g0" FFLAGS=" -O2 -g0" PKG_CONFIG="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/pkg-config" STAGING_DIR="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/aarch64-buildroot-linux-gnu/sysroot" INTLTOOL_PERL=/usr/bin/perl CXX=no -C /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/server"
+/usr/bin/make -j17 GIT_DIR=. PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" AR="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-ar" AS="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-as" LD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-ld" NM="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-nm" CC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc" GCC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc" CPP="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-cpp" CXX="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-g++" FC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gfortran" F77="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gfortran" RANLIB="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-ranlib" READELF="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-readelf" STRIP="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-strip" OBJCOPY="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-objcopy" OBJDUMP="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-objdump" AR_FOR_BUILD="/usr/bin/ar" AS_FOR_BUILD="/usr/bin/as" CC_FOR_BUILD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc" GCC_FOR_BUILD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc" CXX_FOR_BUILD="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/g++" LD_FOR_BUILD="/usr/bin/ld" CPPFLAGS_FOR_BUILD="-I/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include" CFLAGS_FOR_BUILD="-O2 -I/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include" CXXFLAGS_FOR_BUILD="-O2 -I/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include" LDFLAGS_FOR_BUILD="-L/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib -Wl,-rpath,/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib" FCFLAGS_FOR_BUILD="" DEFAULT_ASSEMBLER="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-as" DEFAULT_LINKER="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-ld" CPPFLAGS="-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64" CFLAGS="-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -O2 -g0 -D_FORTIFY_SOURCE=1" CXXFLAGS="-D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -O2 -g0 -D_FORTIFY_SOURCE=1" LDFLAGS="" FCFLAGS=" -O2 -g0" FFLAGS=" -O2 -g0" PKG_CONFIG="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/pkg-config" STAGING_DIR="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/aarch64-buildroot-linux-gnu/sysroot" INTLTOOL_PERL=/usr/bin/perl CXX=no -C /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/server
+/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc -o aesdsocket aesdsocket.c ThreadSafeArrayList.c -I.
+[7m>>> aesd-assignments '885dd66' Installing to target[27m
+echo "@D=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'"
+@D=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'
+echo "/home/hengjt"
+/home/hengjt
+/usr/bin/install -d 0755 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/conf/ /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/finder-app/conf/
+/usr/bin/install -m 0755 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/conf/* /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/finder-app/conf/
+/usr/bin/install -m 0755 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/assignment-autotest/test/assignment5-buildroot/* /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/bin
+#additional requirements 
+/usr/bin/install -m 0755 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/finder-app/writer /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/bin
+/usr/bin/install -m 0755 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/finder-app/finder-test.sh /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/bin
+/usr/bin/install -m 0755 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/finder-app/finder.sh /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/bin
+echo "@D=/usr/bin/install -m 0755 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/server/aesdsocket /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/bin"
+@D=/usr/bin/install -m 0755 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/server/aesdsocket /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/bin
+/usr/bin/install -m 0755 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/server/aesdsocket /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/bin
+echo "/usr/bin/install -m 0755 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/server/aesdsocket-start-stop /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/init.d/S99aesdsocket"
+/usr/bin/install -m 0755 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/server/aesdsocket-start-stop /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/init.d/S99aesdsocket
+echo "display contents aesdsocket-start-stop"
+display contents aesdsocket-start-stop
+cat /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/server/aesdsocket-start-stop
+#!/bin/sh
+# etc/init.d/S99 script [start|stop|restart]
+DAEMON_PATH=/usr/bin
+START_STOP_DAEMON_PATH=/usr/sbin
+#check passed in option
+
+
+DAEMON=${DAEMON_PATH}/aesdsocket
+DAEMON_ARGS="-d"
+
+case "$1" in 
+	start)
+		echo "starting daemon aesdsocket"
+		#echo "${START_STOP_DAEMON_PATH}/start-stop-daemon --start --exec ${DAEMON} -- ${DAEMON_ARGS}"
+        echo "start-stop-daemon --start --exec ${DAEMON} -- ${DAEMON_ARGS}"
+		#${START_STOP_DAEMON_PATH}/start-stop-daemon --start --exec ${DAEMON} -- ${DAEMON_ARGS}
+        start-stop-daemon --start --exec ${DAEMON} -- ${DAEMON_ARGS}
+	;;
+esac
+
+exit 0
+		
+/usr/bin/install -m 0755 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesd-assignments-'885dd66'/server/aesdsocket-start-stop /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/init.d/S99aesdsocket
+#cp /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment5/assignment-5-part-2/server/aesdsocket-start-stop /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/init.d/S99aesdsocket
+[7m>>> aesdchar '1.0' Syncing from source dir '../assignments-3-and-later-hengjoontiang/'[27m
+rsync -au --chmod=u=rwX,go=rX  --exclude .svn --exclude .git --exclude .hg --exclude .bzr --exclude CVS '../assignments-3-and-later-hengjoontiang/'/ /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesdchar-'1.0'
+[7m>>> aesdchar '1.0' Configuring[27m
+[7m>>> aesdchar '1.0' Building[27m
+[7m>>> aesdchar '1.0' Building kernel module(s)[27m
+GIT_DIR=. PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" PKG_CONFIG="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/pkg-config" PKG_CONFIG_SYSROOT_DIR="/" PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1 PKG_CONFIG_ALLOW_SYSTEM_LIBS=1 PKG_CONFIG_LIBDIR="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib/pkgconfig:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/share/pkgconfig" BR_BINARIES_DIR=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images /usr/bin/make -j17 -C /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/linux-5.15.15 HOSTCC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc -O2 -isystem /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include -L/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib -Wl,-rpath,/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib" ARCH=arm64 KCFLAGS="-Wno-attribute-alias" INSTALL_MOD_PATH=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target CROSS_COMPILE="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-" WERROR=0 REGENERATE_PARSERS=1 DEPMOD=true INSTALL_MOD_STRIP=1  PWD=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesdchar-'1.0'/aesd-char-driver M=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesdchar-'1.0'/aesd-char-driver modules
+[7m>>> aesdchar '1.0' Installing to target[27m
+[7m>>> aesdchar '1.0' Installing kernel module(s)[27m
+GIT_DIR=. PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" PKG_CONFIG="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/pkg-config" PKG_CONFIG_SYSROOT_DIR="/" PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1 PKG_CONFIG_ALLOW_SYSTEM_LIBS=1 PKG_CONFIG_LIBDIR="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib/pkgconfig:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/share/pkgconfig" BR_BINARIES_DIR=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images /usr/bin/make -j17 -C /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/linux-5.15.15 HOSTCC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc -O2 -isystem /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include -L/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib -Wl,-rpath,/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib" ARCH=arm64 KCFLAGS="-Wno-attribute-alias" INSTALL_MOD_PATH=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target CROSS_COMPILE="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-" WERROR=0 REGENERATE_PARSERS=1 DEPMOD=true INSTALL_MOD_STRIP=1  PWD=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesdchar-'1.0'/aesd-char-driver M=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/aesdchar-'1.0'/aesd-char-driver modules_install
+  INSTALL /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/lib/modules/5.15.15/extra/aesdchar.ko
+  STRIP   /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/lib/modules/5.15.15/extra/aesdchar.ko
+  DEPMOD  /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/lib/modules/5.15.15
+[7m>>> ldd '5c3cae6' Syncing from source dir '../assignment-7-hengjoontiang/'[27m
+rsync -au --chmod=u=rwX,go=rX  --exclude .svn --exclude .git --exclude .hg --exclude .bzr --exclude CVS '../assignment-7-hengjoontiang/'/ /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/ldd-'5c3cae6'
+[7m>>> ldd '5c3cae6' Configuring[27m
+[7m>>> ldd '5c3cae6' Building[27m
+[7m>>> ldd '5c3cae6' Building kernel module(s)[27m
+GIT_DIR=. PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" PKG_CONFIG="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/pkg-config" PKG_CONFIG_SYSROOT_DIR="/" PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1 PKG_CONFIG_ALLOW_SYSTEM_LIBS=1 PKG_CONFIG_LIBDIR="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib/pkgconfig:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/share/pkgconfig" BR_BINARIES_DIR=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images /usr/bin/make -j17 -C /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/linux-5.15.15 HOSTCC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc -O2 -isystem /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include -L/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib -Wl,-rpath,/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib" ARCH=arm64 KCFLAGS="-Wno-attribute-alias" INSTALL_MOD_PATH=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target CROSS_COMPILE="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-" WERROR=0 REGENERATE_PARSERS=1 DEPMOD=true INSTALL_MOD_STRIP=1  PWD=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/ldd-'5c3cae6'/scull M=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/ldd-'5c3cae6'/scull modules
+[7m>>> ldd '5c3cae6' Installing to target[27m
+[7m>>> ldd '5c3cae6' Installing kernel module(s)[27m
+GIT_DIR=. PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" PKG_CONFIG="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/pkg-config" PKG_CONFIG_SYSROOT_DIR="/" PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1 PKG_CONFIG_ALLOW_SYSTEM_LIBS=1 PKG_CONFIG_LIBDIR="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib/pkgconfig:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/share/pkgconfig" BR_BINARIES_DIR=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images /usr/bin/make -j17 -C /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/linux-5.15.15 HOSTCC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc -O2 -isystem /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include -L/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib -Wl,-rpath,/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib" ARCH=arm64 KCFLAGS="-Wno-attribute-alias" INSTALL_MOD_PATH=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target CROSS_COMPILE="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-" WERROR=0 REGENERATE_PARSERS=1 DEPMOD=true INSTALL_MOD_STRIP=1  PWD=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/ldd-'5c3cae6'/scull M=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/ldd-'5c3cae6'/scull modules_install
+  INSTALL /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/lib/modules/5.15.15/extra/scull.ko
+  STRIP   /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/lib/modules/5.15.15/extra/scull.ko
+  DEPMOD  /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/lib/modules/5.15.15
+[7m>>>   Finalizing host directory[27m
+[7m>>>   Finalizing target directory[27m
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/src/hare
+mkdir -p /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/etc/meson
+sed -e "s%@TARGET_CFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-O2', '-g0', '-D_FORTIFY_SOURCE=1'@PKG_TARGET_CFLAGS@%g" -e "s%@TARGET_LDFLAGS@%@PKG_TARGET_LDFLAGS@%g" -e "s%@TARGET_CXXFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-O2', '-g0', '-D_FORTIFY_SOURCE=1'@PKG_TARGET_CXXFLAGS@%g" -e "s%@TARGET_FCFLAGS@%'-O2', '-g0'@PKG_TARGET_FCFLAGS@%g"         -e "s%@TARGET_CC@%/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc%g" -e "s%@TARGET_CXX@%/bin/false%g" -e "s%@TARGET_AR@%/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-ar%g" -e "s%@TARGET_FC@%/bin/false%g" -e "s%@TARGET_STRIP@%/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-strip%g" -e "s%@TARGET_ARCH@%aarch64%g" -e "s%@TARGET_CPU@%cortex-a53%g" -e "s%@TARGET_ENDIAN@%little%g" -e "s%@TARGET_FCFLAGS@%%g" -e "s%@TARGET_CFLAGS@%%g" -e "s%@TARGET_LDFLAGS@%%g" -e "s%@TARGET_CXXFLAGS@%%g" -e "s%@BR2_CMAKE@%/usr/bin/cmake%g" -e "s%@PKGCONF_HOST_BINARY@%/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/pkgconf%g" -e "s%@HOST_DIR@%/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host%g" -e "s%@STAGING_DIR@%/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/aarch64-buildroot-linux-gnu/sysroot%g" -e "s%@STATIC@%false%g" /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/support/misc/cross-compilation.conf.in > /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/etc/meson/cross-compilation.conf.in
+sed         -e "s%@TARGET_CC@%/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc%g" -e "s%@TARGET_CXX@%/bin/false%g" -e "s%@TARGET_AR@%/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-gcc-ar%g" -e "s%@TARGET_FC@%/bin/false%g" -e "s%@TARGET_STRIP@%/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-strip%g" -e "s%@TARGET_ARCH@%aarch64%g" -e "s%@TARGET_CPU@%cortex-a53%g" -e "s%@TARGET_ENDIAN@%little%g" -e "s%@TARGET_FCFLAGS@%'-O2', '-g0'%g" -e "s%@TARGET_CFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-O2', '-g0', '-D_FORTIFY_SOURCE=1'%g" -e "s%@TARGET_LDFLAGS@%%g" -e "s%@TARGET_CXXFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-O2', '-g0', '-D_FORTIFY_SOURCE=1'%g" -e "s%@BR2_CMAKE@%/usr/bin/cmake%g" -e "s%@PKGCONF_HOST_BINARY@%/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/pkgconf%g" -e "s%@HOST_DIR@%/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host%g" -e "s%@STAGING_DIR@%/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/aarch64-buildroot-linux-gnu/sysroot%g" -e "s%@STATIC@%false%g" /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/support/misc/cross-compilation.conf.in > /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/etc/meson/cross-compilation.conf
+/usr/bin/sed -i -e '/# GENERIC_SERIAL$/s~^.*#~console::respawn:/sbin/getty -L  console 0 vt100 #~' /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/inittab
+/usr/bin/sed -i -e '/^#.*-o remount,rw \/$/s~^#\+~~' /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/inittab
+if grep -q CONFIG_ASH=y /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/busybox-1.38.0/.config; then grep -qsE '^/bin/ash$' /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/shells || echo "/bin/ash" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/shells; fi
+if grep -q CONFIG_HUSH=y /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/busybox-1.38.0/.config; then grep -qsE '^/bin/hush$' /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/shells || echo "/bin/hush" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/shells; fi
+mkdir -p /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc
+echo "buildroot" > /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/hostname
+/usr/bin/sed -i -e '$a \127.0.1.1\tbuildroot' -e '/^127.0.1.1/d' /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/hosts
+mkdir -p /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc
+echo "Welcome to Buildroot" > /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/issue
+/usr/bin/sed -i -e s,^root:[^:]*:,root:"`/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/mkpasswd -m "sha-512" "root"`":, /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/shadow
+grep -qsE '^/bin/sh$' /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/shells || echo "/bin/sh" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/shells
+if [ -x /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/sbin/swapon -a -x /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/sbin/swapoff ]; then /usr/bin/sed -i -e '/^#.*\/sbin\/swap/s/^#\+[[:blank:]]*//' /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/inittab; else /usr/bin/sed -i -e '/^[^#].*\/sbin\/swap/s/^/#/' /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/inittab; fi
+if test -d /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/lib/modules/`MAKEFLAGS='--no-print-directory' /usr/bin/make -j17 HOSTCC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc -O2 -isystem /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include -L/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib -Wl,-rpath,/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib" ARCH=arm64 KCFLAGS="-Wno-attribute-alias" INSTALL_MOD_PATH=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target CROSS_COMPILE="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-" WERROR=0 REGENERATE_PARSERS=1 DEPMOD=true INSTALL_MOD_STRIP=1 -C /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/linux-5.15.15 --no-print-directory -s kernelrelease 2>/dev/null` && grep -q "CONFIG_MODULES=y" /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/linux-5.15.15/.config; then /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin/depmod -a -b /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target `MAKEFLAGS='--no-print-directory' /usr/bin/make -j17 HOSTCC="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/ccache /usr/bin/gcc -O2 -isystem /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/include -L/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib -Wl,-rpath,/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/lib" ARCH=arm64 KCFLAGS="-Wno-attribute-alias" INSTALL_MOD_PATH=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target CROSS_COMPILE="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-" WERROR=0 REGENERATE_PARSERS=1 DEPMOD=true INSTALL_MOD_STRIP=1 -C /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/linux-5.15.15 --no-print-directory -s kernelrelease 2>/dev/null`; fi
+printf '%s\n' C en_US locale-archive > /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/locales.nopurge
+for dir in /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/locale /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/X11/locale /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/lib/locale; do if [ ! -d $dir ]; then continue; fi; for langdir in $dir/*; do if [ -e "${langdir}" ]; then grep -qx "${langdir##*/}" /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/locales.nopurge || rm -rf $langdir; fi done; done
+if [ -d /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/X11/locale ]; then for lang in C en_US; do if [ -f /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/X11/locale/$lang/XLC_LOCALE ]; then echo "$lang/XLC_LOCALE: $lang"; fi done > /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/X11/locale/locale.dir; fi
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/include /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/aclocal \
+	/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/lib/pkgconfig /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/pkgconfig \
+	/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/lib/cmake /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/cmake \
+	/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/lib/rpm /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/doc
+find /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/{lib,share}/ -name '*.cmake' -print0 | xargs -0 rm -f
+find /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/lib/ /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/lib/ /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/libexec/ \
+	\( -name '*.a' -o -name '*.la' -o -name '*.prl' \) -print0 | xargs -0 rm -f
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/gdb
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/bash-completion
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/bash_completion.d
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/zsh
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/man /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/man
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/info /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/info
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/doc /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/doc
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share/gtk-doc
+rmdir /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/share 2>/dev/null || true
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/lib/debug /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/lib/debug
+find /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target   -type f \( -perm /111 -o -name '*.so*' \) -not \( -name 'libpthread*.so*' -o -name 'ld-*.so*' -o -name '*.ko' \) -print0 | xargs -0 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-strip --remove-section=.comment --remove-section=.note 2>/dev/null || true
+find /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target   \( -name 'ld-*.so*' -o -name 'libpthread*.so*' \) -print0 | xargs -0 -r /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/aarch64-buildroot-linux-gnu-strip --remove-section=.comment --remove-section=.note --strip-debug 2>/dev/null || true
+test -f /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/ld.so.conf && \
+	{ echo "ERROR: we shouldn't have a /etc/ld.so.conf file"; exit 1; } || true
+test -d /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc/ld.so.conf.d && \
+	{ echo "ERROR: we shouldn't have a /etc/ld.so.conf.d directory"; exit 1; } || true
+mkdir -p /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc
+( \
+	echo "NAME=Buildroot"; \
+	echo "VERSION=2026.05-721-gd38b4915e9"; \
+	echo "ID=buildroot"; \
+	echo "VERSION_ID=2026.08-git"; \
+	echo "PRETTY_NAME=\"Buildroot 2026.08-git\"" \
+) >  /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr/lib/os-release
+ln -sf ../usr/lib/os-release /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/etc
+[7m>>>   Sanitizing RPATH in target tree[27m
+PARALLEL_JOBS=17 \
+	PER_PACKAGE_DIR=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/per-package \
+	/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/support/scripts/fix-rpath target
+[7m>>>   Sanity check in overlays ../base_external/rootfs_overlay[27m
+support/scripts/check-merged \
+	-t overlay \
+	-u \
+	 \
+	../base_external/rootfs_overlay
+[7m>>>   Copying overlay ../base_external/rootfs_overlay[27m
+touch /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/usr
+[7m>>>   Generating root filesystems common tables[27m
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs
+mkdir -p /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs
+printf '   	dhcpcd -1 dhcpcd -1 * - - - dhcpcd user\n 	sshd -1 sshd -1 * /var/empty - - SSH drop priv user\n\n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_users_table.txt
+printf '   # Set permissions on all applets with BB_SUID_REQUIRE and BB_SUID_MAYBE.\n# 12 Applets are pulled from applets.h using grep command :\n#  grep -r -e "APPLET.*BB_SUID_REQUIRE\\|APPLET.*BB_SUID_MAYBE" #  ./include/applets.h\n# These applets are added to the device table and the makedev file\n# ignores the files with type '\''F'\'' ( optional files).\n	/usr/bin/wall 			 F 4755 0  0 - - - - -\n	/bin/ping 			 F 4755 0  0 - - - - -\n	/bin/ping6 			 F 4755 0  0 - - - - -\n	/usr/bin/crontab 		 F 4755 0  0 - - - - -\n	/sbin/findfs 			 F 4755 0  0 - - - - -\n	/bin/login 			 F 4755 0  0 - - - - -\n	/bin/mount 			 F 4755 0  0 - - - - -\n	/usr/bin/passwd 		 F 4755 0  0 - - - - -\n	/bin/su 			 F 4755 0  0 - - - - -\n	/usr/bin/traceroute 		 F 4755 0  0 - - - - -\n	/usr/bin/traceroute6 		 F 4755 0  0 - - - - -\n	/usr/bin/vlock 			 F 4755 0  0 - - - - -\n 	/var/empty d 755 root root - - - - -\n\n' > /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_devices_table.txt
+cat system/device_table.txt system/device_table_dev.txt >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_devices_table.txt
+printf '   \n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_devices_table.txt
+[7m>>>   Generating filesystem image rootfs.cpio[27m
+mkdir -p /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio
+mkdir -p /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio
+rsync -auH --exclude=/THIS_IS_NOT_YOUR_ROOT_FILESYSTEM /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/ /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/target
+echo '#!/bin/sh' > /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+echo "set -e" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+echo "chown -h -R 0:0 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/target" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/support/scripts/mkusers /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_users_table.txt /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/target >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+echo "/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/makedevs -d /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_devices_table.txt /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/target" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+printf '   	rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/target/usr/lib/udev/hwdb.d/ /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/target/etc/udev/hwdb.d/\n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+printf '   	if [ ! -e /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/target/init ]; then ln -sf sbin/init /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/target/init; fi\n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+echo "find /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/target/run/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+echo "find /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/target/tmp/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+printf '   \n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+printf '   \n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+printf '   	cd /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/target && find . | LC_ALL=C sort | cpio  --quiet -o -H newc > /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images/rootfs.cpio\n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+chmod a+x /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" FAKEROOTDONTTRYCHOWN=1 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/fakeroot -- /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/fakeroot
+rootdir=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/cpio/target
+table='/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_devices_table.txt'
+PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" gzip -9 -c -n /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images/rootfs.cpio > /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images/rootfs.cpio.gz
+[7m>>>   Generating filesystem image rootfs.ext2[27m
+mkdir -p /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2
+mkdir -p /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2
+rsync -auH --exclude=/THIS_IS_NOT_YOUR_ROOT_FILESYSTEM /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/ /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/target
+echo '#!/bin/sh' > /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+echo "set -e" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+echo "chown -h -R 0:0 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/target" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/support/scripts/mkusers /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_users_table.txt /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/target >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+echo "/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/makedevs -d /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_devices_table.txt /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/target" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+printf '   	rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/target/usr/lib/udev/hwdb.d/ /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/target/etc/udev/hwdb.d/\n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+echo "find /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/target/run/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+echo "find /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/target/tmp/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+printf '   \n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+printf '   \n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+printf '   	rm -f /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images/rootfs.ext2\n	/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin/mkfs.ext4 -d /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/target -N 0 -m 20 -L "rootfs" -I 1024 -O ^64bit /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images/rootfs.ext2 "200M" || { ret=$?; echo "*** Maybe you need to increase the filesystem size (BR2_TARGET_ROOTFS_EXT2_SIZE)" 1>&2; exit $ret; }\n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+chmod a+x /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" FAKEROOTDONTTRYCHOWN=1 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/fakeroot -- /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/fakeroot
+rootdir=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/ext2/target
+table='/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_devices_table.txt'
+Creating regular file /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images/rootfs.ext2
+64-bit filesystem support is not enabled.  The larger fields afforded by this feature enable full-strength checksumming.  Pass -O 64bit to rectify.
+Creating filesystem with 204800 1k blocks and 51200 inodes
+Filesystem UUID: 7ffd0616-d228-448c-aa40-49b777374fc0
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729
+
+Allocating group tables:  0/25     done                            
+Writing inode tables:  0/25     done                            
+Creating journal (4096 blocks): done
+Copying files into the device: done
+Writing superblocks and filesystem accounting information:  0/25     done
+
+ln -sf rootfs.ext2 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images/rootfs.ext4
+[7m>>>   Generating filesystem image rootfs.tar[27m
+mkdir -p /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images
+rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar
+mkdir -p /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar
+rsync -auH --exclude=/THIS_IS_NOT_YOUR_ROOT_FILESYSTEM /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/target/ /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/target
+echo '#!/bin/sh' > /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+echo "set -e" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+echo "chown -h -R 0:0 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/target" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/support/scripts/mkusers /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_users_table.txt /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/target >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+echo "/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/makedevs -d /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_devices_table.txt /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/target" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+printf '   	rm -rf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/target/usr/lib/udev/hwdb.d/ /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/target/etc/udev/hwdb.d/\n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+echo "find /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/target/run/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+echo "find /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/target/tmp/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+printf '   \n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+printf '   \n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+printf '   	(cd /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/target; find -print0 | LC_ALL=C sort -z | tar  --pax-option=exthdr.name=%%d/PaxHeaders/%%f,atime:=0,ctime:=0 -cf /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/images/rootfs.tar --null --xattrs-include='\''*'\'' --no-recursion -T - --numeric-owner)\n' >> /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+chmod a+x /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+PATH="/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin:/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/sbin:/home/hengjt/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/hengjt/Downloads/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/bin:/snap/bin" FAKEROOTDONTTRYCHOWN=1 /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/host/bin/fakeroot -- /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/fakeroot
+rootdir=/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/tar/target
+table='/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot/output/build/buildroot-fs/full_devices_table.txt'
+make: Leaving directory '/home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/buildroot'
+Build returned 0
+build step complete with status 0
+Validation errors 
+~/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/assignment-autotest/test/assignment8-buildroot
+Starting validation step
+~/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8 ~/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/assignment-autotest/test/assignment8-buildroot
+Executing runqemu.sh in background
+hostfwd=tcp::10022-:22
+hostfwd=tcp::9000-:9000
+# Host [localhost]:10022 found: line 837
+/home/hengjt/.ssh/known_hosts updated.
+Original contents retained as /home/hengjt/.ssh/known_hosts.old
+Waiting for qemu to startup
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+[    0.000000] Linux version 5.15.15 (hengjt@hengjt-IdeaPad-Slim-5-Light-14ABR8) (aarch64-buildroot-linux-gnu-gcc.br_real (Buildroot 2026.05-721-gd38b4915e9) 15.3.0, GNU ld (GNU Binutils) 2.45.1) #1 SMP PREEMPT Sun Oct 11 21:35:04 +08 2026
+[    0.000000] Machine model: linux,dummy-virt
+[    0.000000] efi: UEFI not found.
+[    0.000000] NUMA: No NUMA configuration found
+[    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x0000000047ffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0x47fb3c00-0x47fb5fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x0000000047ffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x0000000047ffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x0000000047ffffff]
+[    0.000000] cma: Reserved 32 MiB at 0x0000000045c00000
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: Trusted OS migration not required
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 20 pages/cpu s41112 r8192 d32616 u81920
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] CPU features: detected: ARM erratum 843419
+[    0.000000] CPU features: detected: ARM erratum 845719
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 32256
+[    0.000000] Policy zone: DMA
+[    0.000000] Kernel command line: rootwait root=/dev/vda console=ttyAMA0
+[    0.000000] Dentry cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] Memory: 60996K/131072K available (15488K kernel code, 3068K rwdata, 8180K rodata, 6208K init, 496K bss, 37308K reserved, 32768K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000] random: get_random_bytes called from start_kernel+0x46c/0x668 with crng_init=0
+[    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000044] sched_clock: 56 bits at 62MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.002615] Console: colour dummy device 80x25
+[    0.005919] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
+[    0.006026] pid_max: default: 32768 minimum: 301
+[    0.006613] LSM: Security Framework initializing
+[    0.007452] Mount-cache hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.007488] Mountpoint-cache hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.026772] /cpus/cpu-map: empty cluster
+[    0.031930] rcu: Hierarchical SRCU implementation.
+[    0.035205] EFI services will not be available.
+[    0.036000] smp: Bringing up secondary CPUs ...
+[    0.036069] smp: Brought up 1 node, 1 CPU
+[    0.036093] SMP: Total of 1 processors activated.
+[    0.036139] CPU features: detected: 32-bit EL0 Support
+[    0.036158] CPU features: detected: 32-bit EL1 Support
+[    0.036215] CPU features: detected: CRC32 instructions
+[    0.050800] CPU: All CPU(s) started at EL1
+[    0.051088] alternatives: patching kernel code
+[    0.059760] devtmpfs: initialized
+[    0.066054] KASLR enabled
+[    0.066812] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.066965] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.070027] pinctrl core: initialized pinctrl subsystem
+[    0.077338] DMI not present or invalid.
+[    0.082587] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.089272] DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+[    0.089604] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.089783] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.089936] audit: initializing netlink subsys (disabled)
+[    0.094957] thermal_sys: Registered thermal governor 'step_wise'
+[    0.094992] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.096203] audit: type=2000 audit(0.084:1): state=initialized audit_enabled=0 res=1
+[    0.096515] cpuidle: using governor menu
+[    0.097149] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.097462] ASID allocator initialised with 32768 entries
+[    0.100296] Serial: AMBA PL011 UART driver
+[    0.124223] 9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 47, base_baud = 0) is a PL011 rev1
+[    0.134578] printk: console [ttyAMA0] enabled
+[    0.155846] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.156001] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.156145] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.156274] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.163709] cryptd: max_cpu_qlen set to 1000
+[    0.169566] ACPI: Interpreter disabled.
+[    0.172638] iommu: Default domain type: Translated 
+[    0.172762] iommu: DMA domain TLB invalidation policy: strict mode 
+[    0.173448] vgaarb: loaded
+[    0.175037] SCSI subsystem initialized
+[    0.176492] usbcore: registered new interface driver usbfs
+[    0.176975] usbcore: registered new interface driver hub
+[    0.177171] usbcore: registered new device driver usb
+[    0.178334] pps_core: LinuxPPS API ver. 1 registered
+[    0.178853] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.179111] PTP clock support registered
+[    0.179511] EDAC MC: Ver: 3.0.0
+[    0.182441] FPGA manager framework
+[    0.183158] Advanced Linux Sound Architecture Driver Initialized.
+[    0.191054] clocksource: Switched to clocksource arch_sys_counter
+[    0.191844] VFS: Disk quotas dquot_6.6.0
+[    0.192041] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.193060] pnp: PnP ACPI: disabled
+[    0.206192] NET: Registered PF_INET protocol family
+[    0.207116] IP idents hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.210097] tcp_listen_portaddr_hash hash table entries: 256 (order: 0, 4096 bytes, linear)
+[    0.210336] TCP established hash table entries: 1024 (order: 1, 8192 bytes, linear)
+[    0.210596] TCP bind hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    0.210828] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.211970] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.212249] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.213146] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.215331] RPC: Registered named UNIX socket transport module.
+[    0.215504] RPC: Registered udp transport module.
+[    0.215598] RPC: Registered tcp transport module.
+[    0.215690] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.215881] PCI: CLS 0 bytes, default 64
+[    0.221321] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.221829] kvm [1]: HYP mode not available
+[    0.230600] Initialise system trusted keyrings
+[    0.232238] workingset: timestamp_bits=42 max_order=15 bucket_order=0
+[    0.242340] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.244346] NFS: Registering the id_resolver key type
+[    0.244733] Key type id_resolver registered
+[    0.244847] Key type id_legacy registered
+[    0.245215] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.245418] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    0.246075] 9p: Installing v9fs 9p2000 file system support
+[    0.267599] Key type asymmetric registered
+[    0.267750] Asymmetric key parser 'x509' registered
+[    0.268065] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    0.268302] io scheduler mq-deadline registered
+[    0.268461] io scheduler kyber registered
+[    0.281422] pl061_gpio 9030000.pl061: PL061 GPIO chip registered
+[    0.285117] pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+[    0.285779] pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
+[    0.286328] pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
+[    0.286560] pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
+[    0.287226] pci-host-generic 4010000000.pcie: Memory resource size exceeds max for 32 bits
+[    0.287750] pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    0.288703] pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+[    0.288973] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.289132] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    0.289293] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+[    0.289438] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+[    0.290657] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+[    0.293334] pci 0000:00:01.0: [1af4:1000] type 00 class 0x020000
+[    0.293669] pci 0000:00:01.0: reg 0x10: [io  0x0000-0x001f]
+[    0.293826] pci 0000:00:01.0: reg 0x14: [mem 0x00000000-0x00000fff]
+[    0.294000] pci 0000:00:01.0: reg 0x20: [mem 0x00000000-0x00003fff 64bit pref]
+[    0.294192] pci 0000:00:01.0: reg 0x30: [mem 0x00000000-0x0007ffff pref]
+[    0.296002] pci 0000:00:01.0: BAR 6: assigned [mem 0x10000000-0x1007ffff pref]
+[    0.296368] pci 0000:00:01.0: BAR 4: assigned [mem 0x8000000000-0x8000003fff 64bit pref]
+[    0.296634] pci 0000:00:01.0: BAR 1: assigned [mem 0x10080000-0x10080fff]
+[    0.296782] pci 0000:00:01.0: BAR 0: assigned [io  0x1000-0x101f]
+[    0.300407] EINJ: ACPI disabled.
+[    0.317678] virtio-pci 0000:00:01.0: enabling device (0000 -> 0003)
+[    0.327339] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.330785] SuperH (H)SCI(F) driver initialized
+[    0.331699] msm_serial: driver initialized
+[    0.334043] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    0.345968] loop: module loaded
+[    0.357437] virtio_blk virtio0: [vda] 409600 512-byte logical blocks (210 MB/200 MiB)
+[    0.375152] megasas: 07.717.02.00-rc1
+[    0.379557] physmap-flash 0.flash: physmap platform flash device: [mem 0x00000000-0x03ffffff]
+[    0.380889] 0.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+[    0.381417] Intel/Sharp Extended Query Table at 0x0031
+[    0.382224] Using buffer write method
+[    0.382764] physmap-flash 0.flash: physmap platform flash device: [mem 0x04000000-0x07ffffff]
+[    0.383634] 0.flash: Found 2 x16 devices at 0x0 in 32-bit bank. Manufacturer ID 0x000000 Chip ID 0x000000
+[    0.383847] Intel/Sharp Extended Query Table at 0x0031
+[    0.384453] Using buffer write method
+[    0.384611] Concatenating MTD devices:
+[    0.384707] (0): "0.flash"
+[    0.384772] (1): "0.flash"
+[    0.384835] into device "0.flash"
+[    0.402576] libphy: Fixed MDIO Bus: probed
+[    0.405047] tun: Universal TUN/TAP device driver, 1.6
+[    0.413656] thunder_xcv, ver 1.0
+[    0.413828] thunder_bgx, ver 1.0
+[    0.413961] nicpf, ver 1.0
+[    0.415747] hclge is initializing
+[    0.415933] hns3: Hisilicon Ethernet Network Driver for Hip08 Family - version
+[    0.416080] hns3: Copyright (c) 2017 Huawei Corporation.
+[    0.416344] e1000: Intel(R) PRO/1000 Network Driver
+[    0.416462] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    0.416676] e1000e: Intel(R) PRO/1000 Network Driver
+[    0.416785] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    0.416993] igb: Intel(R) Gigabit Ethernet Network Driver
+[    0.417106] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    0.417289] igbvf: Intel(R) Gigabit Virtual Function Network Driver
+[    0.417430] igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+[    0.417932] sky2: driver version 1.30
+[    0.419450] VFIO - User Level meta-driver version: 0.3
+[    0.422274] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.422472] ehci-pci: EHCI PCI platform driver
+[    0.422693] ehci-platform: EHCI generic platform driver
+[    0.423113] ehci-orion: EHCI orion driver
+[    0.423334] ehci-exynos: EHCI Exynos driver
+[    0.423547] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.423726] ohci-pci: OHCI PCI platform driver
+[    0.423952] ohci-platform: OHCI generic platform driver
+[    0.424200] ohci-exynos: OHCI Exynos driver
+[    0.425088] usbcore: registered new interface driver usb-storage
+[    0.430451] rtc-pl031 9010000.pl031: registered as rtc0
+[    0.431100] rtc-pl031 9010000.pl031: setting system clock to 2026-10-17T05:20:40 UTC (1792214440)
+[    0.432315] i2c_dev: i2c /dev entries driver
+[    0.439911] sdhci: Secure Digital Host Controller Interface driver
+[    0.440045] sdhci: Copyright(c) Pierre Ossman
+[    0.440990] Synopsys Designware Multimedia Card Interface Driver
+[    0.442225] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.445046] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.448017] usbcore: registered new interface driver usbhid
+[    0.448146] usbhid: USB HID core driver
+[    0.456170] NET: Registered PF_PACKET protocol family
+[    0.457189] 9pnet: Installing 9P2000 support
+[    0.457503] Key type dns_resolver registered
+[    0.458118] Loading compiled-in X.509 certificates
+[    0.465186] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.470374] ALSA device list:
+[    0.470513]   No soundcards found.
+[    0.474056] uart-pl011 9000000.pl011: no DMA platform data
+[    0.531638] EXT4-fs (vda): orphan cleanup on readonly fs
+[    0.532125] EXT4-fs (vda): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+[    0.532544] VFS: Mounted root (ext4 filesystem) readonly on device 254:0.
+[    0.533960] devtmpfs: mounted
+[    0.561767] Freeing unused kernel memory: 6208K
+[    0.562573] Run /sbin/init as init process
+[    0.635545] random: fast init done
+[    0.707866] EXT4-fs (vda): re-mounted. Opts: (null). Quota mode: none.
+Saving 2048 bits of non-creditable seed for next boot
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Starting watchdog...
+Starting network: udhcpc: started, v1.38.0
+udhcpc: broadcasting discover
+udhcpc: broadcasting select for 10.0.2.15, server 10.0.2.2
+udhcpc: lease of 10.0.2.15 obtained from 10.0.2.2, lease time 86400
+deleting routers
+adding dns 10.0.2.3
+OK
+Starting dhcpcd...
+[    2.862461] NET: Registered PF_INET6 protocol family
+[    2.873563] Segment Routing with IPv6
+[    2.873780] In-situ OAM (IOAM) with IPv6
+dhcpcd-10.2.4 starting
+[    2.986832] 8021q: 802.1Q VLAN Support v1.8
+[    2.987368] 8021q: adding VLAN 0 to HW filter on device eth0
+[    3.030242] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    3.094249] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    3.095713] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    3.095970] platform regulatory.0: Falling back to sysfs fallback for: regulatory.db
+DUID 00:01:00:01:32:65:c2:2b:52:54:00:12:34:56
+eth0: IAID 00:12:34:56
+still waiting for qemu to startup... last attempt returned 255 with output 
+ssh: connect to host localhost port 10022: Connection refused
+[    5.835293] random: crng init done
+eth0: soliciting an IPv6 router
+eth0: Router Advertisement from fe80::2
+eth0: adding address fec0::1832:cb99:90e1:3cd3/64
+eth0: adding route to fec0::/64
+eth0: adding default route via fe80::2
+eth0: soliciting a DHCP lease
+eth0: offered 10.0.2.15 from 10.0.2.2
+eth0: leased 10.0.2.15 for 86400 seconds
+eth0: adding route to 10.0.2.0/24
+eth0: adding default route via 10.0.2.2
+Starting crond: OK
+Starting dropbear sshd: OK
+ssh-keygen: generating new host keys: RSA ECDSA ED25519 MLDSA44-ED25519 
+Starting sshd: OK
+S98lddmodules started
+Loading scull driver...
+[    9.416071] scull: loading out-of-tree module taints kernel.
+[    9.417875] scullsingle registered at 1ff00008
+[    9.418041] sculluid registered at 1ff00009
+[    9.418132] scullwuid registered at 1ff0000a
+[    9.418219] scullpriv registered at 1ff0000b
+OK
+Loading misc-modules... [    9.699181] Hello, world hengjoontiang
+OK
+Loading faulty driver...
+insmod /lib/modules/5.15.15/extra/faulty.ko
+insmod faulty.ko successful
+fault MAJOR= 510
+still waiting for qemu to startup... last attempt returned 255 with output 
+OK
+Loading aesdchar driver...
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 127.0.0.1 port 10022
+aesdchar MAJOR= 509
+OK
+starting daemon aesdsocket
+start-stop-daemon --start --exec /usr/bin/aesdsocket -- -d
+argument passed in = -d
+SSH login successful, waiting 40 additional seconds for process startup
+
+Welcome to Buildroot
+buildroot login: adding /home/hengjt/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/assignment-autotest/test/assignment8-buildroot/drivertest.sh to the rootfs at /usr/bin
+Validation of driver
+Adding and removing aesdchar driver
+aesdchar               16384  0
+[   52.959249] Driver : open device
+[   52.960014] write 7 bytes with offset 0
+[   52.960124] write 7 bytes with offset 0
+[   52.960226] writing to circular buffer write1
+[   52.960939] Driver : open device
+[   52.961153] write 7 bytes with offset 0
+[   52.961175] write 7 bytes with offset 0
+[   52.961262] writing to circular buffer write2
+[   52.961664] Driver : open device
+[   52.961862] write 7 bytes with offset 0
+[   52.961884] write 7 bytes with offset 0
+[   52.961971] writing to circular buffer write3
+[   52.962349] Driver : open device
+[   52.962560] write 7 bytes with offset 0
+[   52.962582] write 7 bytes with offset 0
+[   52.962669] writing to circular buffer write4
+[   52.971263] Driver : open device
+[   52.971492] write 7 bytes with offset 0
+[   52.971515] write 7 bytes with offset 0
+[   52.971603] writing to circular buffer write5
+[   52.971993] Driver : open device
+[   52.972194] write 7 bytes with offset 0
+[   52.972215] write 7 bytes with offset 0
+[   52.972301] writing to circular buffer write6
+[   52.972702] Driver : open device
+[   52.972896] write 7 bytes with offset 0
+[   52.972918] write 7 bytes with offset 0
+[   52.973003] writing to circular buffer write7
+[   52.973375] Driver : open device
+[   52.973585] write 7 bytes with offset 0
+[   52.973609] write 7 bytes with offset 0
+[   52.973696] writing to circular buffer write8
+[   52.974071] Driver : open device
+[   52.974267] write 7 bytes with offset 0
+[   52.974289] write 7 bytes with offset 0
+[   52.974374] writing to circular buffer write9
+[   52.974755] Driver : open device
+[   52.983136] write 8 bytes with offset 0
+[   52.983163] write 8 bytes with offset 0
+[   52.983255] writing to circular buffer write10
+The output below should show writes 1-10 in order
+[   53.083263] Driver : open device
+--- /tmp/tmp.vXfhfQ
++++ /tmp/tmp.zayqCj
+@@ -0,0 +1,10 @@
++write1
++write2
++write3
++write4
++write5
++write6
++write7
++write8
++write9
++write10
+difference detected, expected:
+write1
+write2
+write3
+write4
+write5
+write6
+write7
+write8
+write9
+write10
+but found
+[   53.375746] Driver : open device
+[   53.376013] write 8 bytes with offset 0
+[   53.376040] write 8 bytes with offset 0
+[   53.376144] writing to circular buffer write11
+[   53.505957] Driver : open device
+The output should show writes 2-11 in order
+--- /tmp/tmp.vXfhfQ
++++ /tmp/tmp.6RBjGk
+@@ -0,0 +1,10 @@
++write2
++write3
++write4
++write5
++write6
++write7
++write8
++write9
++write10
++write11
+difference detected, expected:
+write2
+write3
+write4
+write5
+write6
+write7
+write8
+write9
+write10
+write11
+but found
+[   53.707565] Driver : open device
+[   53.707854] write 1 bytes with offset 0
+[   53.708202] Driver : open device
+[   53.708420] write 1 bytes with offset 0
+[   53.708746] Driver : open device
+[   53.708949] write 2 bytes with offset 0
+[   53.709266] Driver : open device
+[   53.709476] write 3 bytes with offset 0
+[   53.709498] write 3 bytes with offset 0
+[   53.709584] writing to circular buffer write1
+[   53.709584] 
+[   53.710023] Driver : open device
+[   53.710212] write 7 bytes with offset 0
+[   53.710236] write 7 bytes with offset 0
+[   53.710320] writing to circular buffer write2
+[   53.710320] 
+[   53.710735] Driver : open device
+[   53.719118] write 7 bytes with offset 0
+[   53.719145] write 7 bytes with offset 0
+[   53.719237] writing to circular buffer write3
+[   53.719237] 
+[   53.719664] Driver : open device
+[   53.719856] write 7 bytes with offset 0
+[   53.719880] write 7 bytes with offset 0
+[   53.719965] writing to circular buffer write4
+[   53.719965] 
+[   53.720357] Driver : open device
+[   53.720561] write 7 bytes with offset 0
+[   53.720582] write 7 bytes with offset 0
+[   53.720669] writing to circular buffer write5
+[   53.720669] 
+[   53.721059] Driver : open device
+[   53.721245] write 7 bytes with offset 0
+[   53.721266] write 7 bytes with offset 0
+[   53.721351] writing to circular buffer write6
+[   53.721351] 
+[   53.721756] Driver : open device
+[   53.721943] write 7 bytes with offset 0
+[   53.721966] write 7 bytes with offset 0
+[   53.722052] writing to circular buffer write7
+[   53.722052] 
+[   53.722453] Driver : open device
+[   53.722644] write 7 bytes with offset 0
+[   53.722665] write 7 bytes with offset 0
+[   53.722750] writing to circular buffer write8
+[   53.722750] 
+[   53.731934] Driver : open device
+[   53.732141] write 7 bytes with offset 0
+[   53.732163] write 7 bytes with offset 0
+[   53.732249] writing to circular buffer write9
+[   53.732249] 
+[   53.732662] Driver : open device
+[   53.732853] write 2 bytes with offset 0
+[   53.733156] Driver : open device
+[   53.733343] write 2 bytes with offset 0
+[   53.733658] Driver : open device
+[   53.733846] write 4 bytes with offset 0
+[   53.733867] write 4 bytes with offset 0
+[   53.733952] writing to circular buffer write10
+The output should show writes 1-10 in order, with write1 and write10 on a single line
+[   53.778757] Driver : open device
+--- /tmp/tmp.vXfhfQ
++++ /tmp/tmp.zayqCj
+@@ -0,0 +1,10 @@
++write1
++write2
++write3
++write4
++write5
++write6
++write7
++write8
++write9
++write10
+difference detected, expected:
+write1
+write2
+write3
+write4
+write5
+write6
+write7
+write8
+write9
+write10
+but found
+[0;31mValidation Error:Driver test failed[0m
+Validation of aesdsocket
+Adding and removing aesdchar driver
+aesdchar               16384  0
+  258 root     /usr/bin/aesdsocket -d
+~/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/assignment-autotest/test/assignment8-buildroot ~/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8 ~/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/assignment-autotest/test/assignment8-buildroot
+Testing target localhost on port 9000
+sending string abcdefg to localhost on port 9000
+Differences found after sending abcdefg to localhost on port 9000
+Expected contents to match:
+abcdefg
+But found contents:
+timestamp: 2026-10-17 05:21:00
+timestamp: 2026-10-17 05:21:10
+timestamp: 2026-10-17 05:21:20
+timestamp: 2026-10-17 05:21:30
+abcdefg
+With differences
+--- /tmp/tmp.Cx0WH2rLwd	2026-10-17 13:21:37.083426608 +0800
++++ /tmp/tmp.cfZitq6lb0	2026-10-17 13:21:36.079423908 +0800
+@@ -1 +1,5 @@
++timestamp: 2026-10-17 05:21:00
++timestamp: 2026-10-17 05:21:10
++timestamp: 2026-10-17 05:21:20
++timestamp: 2026-10-17 05:21:30
+ abcdefg
+Test complete with failure
+[0;31mValidation Error:sockettest.sh failed[0m
+Killing qemu
+~/Desktop/Training/Coursera/LinuxSystemProgrammingandIntroductiontoBuildroot/Assignment8/assignment-8/assignment-autotest/test/assignment8-buildroot
+Validation failed with error list :Driver test failed:sockettest.sh failed
+Test of assignment assignment8-buildroot failed with rc=1
